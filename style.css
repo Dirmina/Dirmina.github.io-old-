@@ -1,0 +1,165 @@
+/*<------------------------------------------------------------------------>
+<------------------                $base                   ------------------>
+<------------------------------------------------------------------------->*/
+
+@font-face 
+{
+    font-family: 'RobotoRegular';
+    src: url('font/roboto_regular_macroman/Roboto-Regular-webfont.eot');
+    src: url('font/roboto_regular_macroman/Roboto-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/roboto_regular_macroman/Roboto-Regular-webfont.woff2') format('woff2'),
+         url('font/roboto_regular_macroman/Roboto-Regular-webfont.woff') format('woff'),
+         url('font/roboto_regular_macroman/Roboto-Regular-webfont.ttf') format('truetype'),
+         url('font/roboto_regular_macroman/Roboto-Regular-webfont.svg#robotoregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face 
+{
+	font-family: 'RobotoThin';
+    src: url('font/roboto_thin_regular/Roboto-Thin-webfont.eot');
+    src: url('font/roboto_thin_regular/Roboto-Thin-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/roboto_thin_regular/Roboto-Thin-webfont.woff2') format('woff2'),
+         url('font/roboto_thin_regular/Roboto-Thin-webfont.woff') format('woff'),
+         url('font/roboto_thin_regular/Roboto-Thin-webfont.ttf') format('truetype'),
+         url('font/roboto_thin_regular/Roboto-Thin-webfont.svg#robotomedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'DiscoRegular';
+    src: url('font/disco_regular_macroman/DISCO___-webfont.eot');
+    src: url('font/disco_regular_macroman/DISCO___-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/disco_regular_macroman/DISCO___-webfont.woff2') format('woff2'),
+         url('font/disco_regular_macroman/DISCO___-webfont.woff') format('woff'),
+         url('font/disco_regular_macroman/DISCO___-webfont.ttf') format('truetype'),
+         url('font/disco_regular_macroman/DISCO___-webfont.svg#discoregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+body {
+	font-family: RobotoRegular, Arial, sans-serif;
+	margin: 0;
+	background-color: #EFEBE9;
+	color: #37474F;
+	display: flex;
+}
+aside {
+	width:33.3333333334%;
+	background-color: #29B6F6;
+	display:flex;
+	flex-direction: column;
+}
+a{ color: #37474F; }
+a:hover
+{
+	font-weight: bold;
+	font-size: 1.05rem;
+}
+section{width: 100%;}
+
+h1,h2,h3 {
+	font-family: RobotoThin, Arial, sans-serif;
+}
+
+strong {color:#29B6F6;}
+mark {
+	background-color: #EFEBE9;
+	border-bottom: 1px #29B6F6 solid;
+}
+img {
+	width: 100%;
+	height:auto;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+}
+ul {	
+	list-style: none; 
+	padding: 0;
+}
+/*<------------------------------------------------------------------------>
+<------------------                $layout                   ------------------>
+<------------------------------------------------------------------------->*/
+.l-list-icons {
+	display:flex;
+	justify-content: space-around;
+	text-align:center;
+
+}
+.l-list-contact {flex-direction: column; padding-top: 0.5rem;}
+.l-contact-icons {
+	display:block;
+	padding-bottom: 0.5rem;
+}
+
+.l-list-items {
+	display:flex;	
+	text-align: left;
+}
+.l-items-date {width: 33.3333333334%}
+.l-items-content {width:100%;}
+.l-items-softskills { 
+	padding-top: 2.5rem;
+	justify-content: space-around; 
+	text-align: center;
+	font-weight: bold; 
+}
+
+.l-aside-about {
+	flex: 2;
+}
+.l-p-about {
+	padding-left: 1rem;
+	padding-right: 1rem;
+	text-align: justify;
+}
+.l-main-section { margin: 3rem; }
+.l-header-section {padding-bottom: 4rem;}
+
+/*<------------------------------------------------------------------------>
+<------------------                $module                   ------------------>
+<------------------------------------------------------------------------->*/
+.aside-title {
+	color :#29B6F6;
+	background-color: #37474F;
+	padding-top: 0.2rem;
+	padding-bottom: 0.2rem;
+	text-align: center;
+}
+.aside-icons {	color: #0277BD;}
+.icons-circle {
+	border : 1px  #0277BD solid;
+	border-radius: 50%;
+	padding: 0.7rem;
+}
+
+.section-icons {color :#29B6F6;}
+.section-title {
+	border-bottom: 1px #29B6F6 solid;
+	padding-bottom:0.7rem;
+}
+.section-h { margin-top: 0; margin-bottom:0;}
+	.section-header-h1
+	{
+		font-size: 5rem;
+		
+	}
+	.section-header-h2 {font-size: 2rem;}
+	.section-h3 {
+		margin-top: 1rem;
+		font-size: 1.5rem;
+		font-weight: bold;
+	}
+	.section-h4 {
+		font-size: 0.9rem;
+		font-weight: normal;
+		font-style: italic;
+}
+
+.disco-font {font-family:DiscoRegular;}
+.size-icons-dot { font-size: 0.5rem; }
+.color-title-content{ color: #A1887F; }
+.list-title-style { font-style: italic; font-size: 0.9rem; }
+.last-p-style { font-size: 1.1rem; }
