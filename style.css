@@ -221,6 +221,13 @@ ul {
 <------------------------------------------------------------------------->*/
 	.is-hidden-xs { display: none;}
 	.is-hidden-md { display:block;}
+
+	/*<------------------------------------------------------------------------>
+<------------------                $others                   ------------------>
+<------------------------------------------------------------------------->*/
+@media only screen and (max-width: 99vw){
+	h1 {font-size: 1rem;}
+}
 }
 
-/* voir les probleme de backgrounds-color*/
+/* voir les MQ pour les font-size  */
