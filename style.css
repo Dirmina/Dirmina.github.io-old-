@@ -173,61 +173,60 @@ ul {
 <------------------                $Others                  ------------------>
 <------------------------------------------------------------------------->*/
 
-
-@media (max-width: 768px) {
-
-/*<------------------------------------------------------------------------>
-<------------------                $base                   ------------------>
-<------------------------------------------------------------------------->*/
-
-	body {flex-direction: column; width: 100%;}
-
-	aside {
-		width: 100%;
-	}
-	figure { width: 33.3333334%; }
-	strong { color: #fff; }
-
-
-
-/*<------------------------------------------------------------------------>
-<------------------                $layouts                  ------------------>
-<------------------------------------------------------------------------->*/
-.l-aside-header-xs {
-	width: 100%;
-	display:flex; 
-	flex-direction: row; 
-	background-color: #EFEBE9;
-	padding-bottom: 2rem;
-}
-.l-aside-contact-xs {margin-top: 0;}
-
-.l-main-section {margin: 0;}
-
-.l-list-items {display:block; padding-top: 1rem;}
-.l-items-date { width: 100%;}
-.l-list-icons { flex-wrap: wrap;}
-.l-list-icons-xs { padding-left: 1rem; padding-right: 1rem;}
-.last-p-style { margin-top: 0; }
-
-/*<------------------------------------------------------------------------>
-<------------------                $module                   ------------------>
-<------------------------------------------------------------------------->*/
-.mark-xs{ background-color: #EFEBE9;}
-.last-div-color-xs{ background-color: #29B6F6;}
-
-/*<------------------------------------------------------------------------>
-<------------------                $status                   ------------------>
-<------------------------------------------------------------------------->*/
-	.is-hidden-xs { display: none;}
-	.is-hidden-md { display:block;}
+@media screen and (max-width: 768px) {
 
 	/*<------------------------------------------------------------------------>
-<------------------                $others                   ------------------>
-<------------------------------------------------------------------------->*/
-@media only screen and (max-width: 99vw){
-	h1 {font-size: 1rem;}
-}
-}
+	<------------------                $base                   ------------------>
+	<------------------------------------------------------------------------->*/
 
-/* voir les MQ pour les font-size  */
+		body {flex-direction: column; width: 100%;}
+
+		aside {
+			width: 100%;
+		}
+		figure { width: 33.3333334%; }
+		strong { color: #fff; }
+
+
+
+	/*<------------------------------------------------------------------------>
+	<------------------                $layouts                  ------------------>
+	<------------------------------------------------------------------------->*/
+	.l-aside-header-xs {
+		width: 100%;
+		display:flex; 
+		flex-direction: row; 
+		background-color: #EFEBE9;
+		padding-bottom: 2rem;
+	}
+	.l-aside-contact-xs {margin-top: 0;}
+
+	.l-main-section {margin: 0;}
+
+	.l-list-items {display:block; padding-top: 1rem;}
+	.l-items-date { width: 100%;}
+	.l-list-icons { flex-wrap: wrap;}
+	.l-list-icons-xs { padding-left: 1rem; padding-right: 1rem;}
+	.last-p-style { margin-top: 0; }
+
+	/*<------------------------------------------------------------------------>
+	<------------------                $module                   ------------------>
+	<------------------------------------------------------------------------->*/
+	.mark-xs{ background-color: #EFEBE9;}
+	.last-div-color-xs{ background-color: #29B6F6;}
+
+	/*<------------------------------------------------------------------------>
+	<------------------                $status                   ------------------>
+	<------------------------------------------------------------------------->*/
+		.is-hidden-xs { display: none;}
+		.is-hidden-md { display:block;}
+
+		/*<------------------------------------------------------------------------>
+	<------------------                $others                   ------------------>
+	<------------------------------------------------------------------------->*/
+	@media only screen and (max-width: 99vw){
+		h1 {font-size: 1rem;}
+	}
+	}
+
+	/* voir les MQ pour le layout sur mobile  */
