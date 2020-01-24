@@ -56,7 +56,7 @@ a{ color: #37474F; }
 a:hover
 {
 	font-weight: bold;
-	font-size: 1.05rem;
+	font-size: 1.35vw;
 }
 section{width: 100%;}
 
@@ -72,8 +72,8 @@ mark {
 img {
 	width: 100%;
 	height:auto;
-	padding-top: 1rem;
-	padding-bottom: 1rem;
+	padding-top: 1.3vw;
+	padding-bottom: 1.3vw;
 }
 ul {	
 	list-style: none; 
@@ -88,10 +88,10 @@ ul {
 	text-align:center;
 
 }
-.l-list-contact {flex-direction: column; padding-top: 0.5rem;}
+.l-list-contact {flex-direction: column; padding-top: 0.65vw;}
 .l-contact-icons {
 	display:block;
-	padding-bottom: 0.5rem;
+	padding-bottom: 0.65vw;
 }
 
 .l-list-items {
@@ -101,7 +101,7 @@ ul {
 .l-items-date {width: 33.3333333334%}
 .l-items-content {width:100%;}
 .l-items-softskills { 
-	padding-top: 2.5rem;
+	padding-top: 3.25vw;
 	justify-content: space-around; 
 	text-align: center;
 	font-weight: bold; 
@@ -111,12 +111,12 @@ ul {
 	flex: 2;
 }
 .l-p-about {
-	padding-left: 1rem;
-	padding-right: 1rem;
+	padding-left: 1.3vw;
+	padding-right: 1.3vw;
 	text-align: justify;
 }
-.l-main-section { margin: 3rem; }
-.l-header-section {padding-bottom: 4rem;}
+.l-main-section { margin: 3.9vw; }
+.l-header-section {padding-bottom: 5.2vw;}
 
 /*<------------------------------------------------------------------------>
 <------------------                $module                   ------------------>
@@ -124,45 +124,45 @@ ul {
 .aside-title {
 	color :#29B6F6;
 	background-color: #37474F;
-	padding-top: 0.2rem;
-	padding-bottom: 0.2rem;
+	padding-top: 0.26vw;
+	padding-bottom: 0.26vw;
 	text-align: center;
 }
 .aside-icons {	color: #0277BD;}
 .icons-circle {
 	border : 1px  #0277BD solid;
 	border-radius: 50%;
-	padding: 0.7rem;
+	padding: 0.91vw;
 }
 
 .section-icons {color :#29B6F6;}
 .section-title {
 	border-bottom: 1px #29B6F6 solid;
-	padding-bottom:0.7rem;
+	padding-bottom:0.91vw;
 }
 .section-h { margin-top: 0; margin-bottom:0;}
 	.section-header-h1
 	{
-		font-size: 5rem;
+		font-size: 6.5vw;
 		
 	}
-	.section-header-h2 {font-size: 2rem;}
+	.section-header-h2 {font-size: 2.6vw;}
 	.section-h3 {
-		margin-top: 1rem;
-		font-size: 1.5rem;
+		margin-top: 1.3vw;
+		font-size: 1.95vw;
 		font-weight: bold;
 	}
 	.section-h4 {
-		font-size: 0.9rem;
+		font-size: 1.17vw;
 		font-weight: normal;
 		font-style: italic;
 }
 
 .disco-font {font-family:DiscoRegular;}
-.size-icons-dot { font-size: 0.5rem; }
+.size-icons-dot { font-size: 0.65vw; }
 .color-title-content{ color: #A1887F; }
-.list-title-style { font-style: italic; font-size: 0.9rem; }
-.last-p-style { font-size: 1.1rem; }
+.list-title-style { font-style: italic; font-size: 1.17vw; }
+.last-p-style { font-size: 1.43vw; }
 /*<------------------------------------------------------------------------>
 <------------------                $status                  ------------------>
 <------------------------------------------------------------------------->*/
@@ -197,17 +197,23 @@ ul {
 		display:flex; 
 		flex-direction: row; 
 		background-color: #EFEBE9;
-		padding-bottom: 2rem;
+		/*padding-bottom: 2rem; */
 	}
 	.l-aside-contact-xs {margin-top: 0;}
 
 	.l-main-section {margin: 0;}
 
-	.l-list-items {display:block; padding-top: 1rem;}
+	.l-list-items {display:block; /*padding-top: 1.3vw;*/}
 	.l-items-date { width: 100%;}
 	.l-list-icons { flex-wrap: wrap;}
-	.l-list-icons-xs { padding-left: 1rem; padding-right: 1rem;}
+	.l-list-icons-xs {/* padding-left: 1.3vw; padding-right: 1.3vw;*/}
 	.last-p-style { margin-top: 0; }
+	.section-title { 
+		text-align: center;
+	 /*	margin-left: 2rem;
+	  	margin-right: 2rem;
+	  	margin-top: 2rem; */
+	  }
 
 	/*<------------------------------------------------------------------------>
 	<------------------                $module                   ------------------>
