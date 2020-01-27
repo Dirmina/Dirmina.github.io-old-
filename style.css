@@ -101,7 +101,7 @@ ul {
 	margin-top: 2rem;
 }
 .l-items-date {width: 40%; padding-left: 1rem;}
-.l-items-content {width:100%;}
+.l-items-content {width:100%; padding-left: 1rem;}
 .l-items-softskills { 
 	padding-top: 3.25vw;
 	justify-content: space-around; 
