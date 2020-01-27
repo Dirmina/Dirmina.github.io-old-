@@ -98,8 +98,9 @@ ul {
 .l-list-items {
 	display:flex;	
 	text-align: left;
+	margin-top: 2rem;
 }
-.l-items-date {width: 33.3333333334%}
+.l-items-date {width: 40%; padding-left: 1rem;}
 .l-items-content {width:100%;}
 .l-items-softskills { 
 	padding-top: 3.25vw;
@@ -167,7 +168,7 @@ ul {
 .size-icons-dot { font-size: 0.65vw; }
 .color-title-content{ color: #A1887F; }
 .list-title-style { font-style: italic; font-size: 1.17vw; }
-.last-p-style { font-size: 1.43vw; }
+.last-p-style { font-size: 1.43vw; margin-top: 0;}
 /*<------------------------------------------------------------------------>
 <------------------                $status                  ------------------>
 <------------------------------------------------------------------------->*/
@@ -228,11 +229,11 @@ ul {
 
 	.section-header-h1	{font-size: 3rem;}
 	.section-header-h2 {font-size: 1.5rem;}
-	.section-h3 { font-size: 1.3rem;}
-	.section-h4 {font-size: 1rem;}
-	.size-icons-dot { font-size: 0.5rem; }
-	.list-title-style { font-size: 1rem; }
-	.last-p-style { font-size: 0.9rem; }
+	.section-h3 { font-size: 1.4rem;}
+	.section-h4 {font-size: 1.2rem;}
+	.size-icons-dot { font-size: 0.7rem; }
+	.list-title-style { font-size: 1.2rem; }
+	.last-p-style { font-size: 1.1rem; }
 
 	/*<------------------------------------------------------------------------>
 	<------------------                $status                   ------------------>
