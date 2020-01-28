@@ -56,7 +56,7 @@ a{ color: #37474F; }
 a:hover
 {
 	font-weight: bold;
-	font-size: 1.05rem;
+	font-size: 1.35vw;
 }
 section{width: 100%;}
 
@@ -72,8 +72,8 @@ mark {
 img {
 	width: 100%;
 	height:auto;
-	padding-top: 1.3vw;
-	padding-bottom: 1.3vw;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
 }
 ul {	
 	list-style: none; 
@@ -88,10 +88,10 @@ ul {
 	text-align:center;
 
 }
-.l-list-contact {flex-direction: column; padding-top: 0.65vw;}
+.l-list-contact {flex-direction: column; padding-top: 0.5rem;}
 .l-contact-icons {
 	display:block;
-	padding-bottom: 0.65vw;
+	padding-bottom: 0.5rem;
 }
 
 .l-list-items {
@@ -102,7 +102,7 @@ ul {
 .l-items-date {width: 40%; padding-left: 1rem;}
 .l-items-content {width:100%; padding-left: 1rem;}
 .l-items-softskills { 
-	padding-top: 3.25vw;
+	padding-top: 2.5rem;
 	justify-content: space-around; 
 	text-align: center;
 	font-weight: bold; 
@@ -112,12 +112,12 @@ ul {
 	flex: 2;
 }
 .l-p-about {
-	padding-left: 1.3vw;
-	padding-right: 1.3vw;
+	padding-left: 1rem;
+	padding-right: 1rem;
 	text-align: justify;
 }
-.l-main-section { margin: 3.9vw; }
-.l-header-section {padding-bottom: 5.2vw;}
+.l-main-section { margin: 3rem; }
+.l-header-section {padding-bottom: 4rem;}
 
 /*<------------------------------------------------------------------------>
 <------------------                $module                   ------------------>
@@ -125,25 +125,25 @@ ul {
 .aside-title {
 	color : #EFEBE9;
 	background-color: #37474F;
-	padding-top: 0.26vw;
-	padding-bottom: 0.26vw;
+	padding-top: 0.2rem;
+	padding-bottom: 0.2rem;
 	text-align: center;
 }
 .aside-icons {	color: #0277BD;}
 .icons-circle {
 	border : 1px  #0277BD solid;
 	border-radius: 50%;
-	padding: 0.91vw;
+	padding: 0.7rem;
 }
 
 .section-icons {
 	color :#29B6F6;
-	padding-left: 1.3vw;
-	padding-right: 1.3vw;
+	padding-left: 1rem;
+	padding-right: 1rem;
 }
 .section-title {
 	border-bottom: 1px #29B6F6 solid;
-	padding-bottom:0.91vw;
+	padding-bottom:0.7rem;
 }
 .section-h { margin-top: 0; margin-bottom:0;}
 	.section-header-h1
@@ -153,7 +153,7 @@ ul {
 	}
 	.section-header-h2 {font-size: 2.6vw;}
 	.section-h3 {
-		margin-top: 1.3vw;
+		margin-top: 1rem;
 		font-size: 1.95vw;
 		font-weight: bold;
 	}
@@ -216,9 +216,9 @@ ul {
 	.last-p-style { margin-top: 0; }
 	.section-title { 
 		text-align: center;
-	 margin-left: 2rem;
+	/* margin-left: 2rem;
 	  	margin-right: 2rem;
-	  	margin-top: 2rem; 
+	  	margin-top: 2rem; /*
 	  }
 
 	/*<------------------------------------------------------------------------>
