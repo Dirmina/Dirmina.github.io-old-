@@ -88,7 +88,6 @@ ul {
 	text-align:center;
 
 }
-/*.l-aside-div {display:flex; flex-direction: column; justify-content: space-between; } */
 .l-list-contact {flex-direction: column; padding-top: 0.65vw;}
 .l-contact-icons {
 	display:block;
@@ -245,6 +244,11 @@ ul {
 		/*<------------------------------------------------------------------------>
 	<------------------                $others                   ------------------>
 	<------------------------------------------------------------------------->*/
+	}
+
+	@media only screen and (max-width: 768px;)
+	{
+		.section-title { margin-bottom: 2vw; }
 	}
 
 	/* voir les MQ pour le layout sur mobile  */
