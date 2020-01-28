@@ -216,9 +216,9 @@ ul {
 	.last-p-style { margin-top: 0; }
 	.section-title { 
 		text-align: center;
-	 /*	margin-left: 2rem;
+	 margin-left: 2rem;
 	  	margin-right: 2rem;
-	  	margin-top: 2rem; */
+	  	margin-top: 2rem; 
 	  }
 
 	/*<------------------------------------------------------------------------>
@@ -244,13 +244,6 @@ ul {
 		/*<------------------------------------------------------------------------>
 	<------------------                $others                   ------------------>
 	<------------------------------------------------------------------------->*/
-	}
-
-	@media only screen and (max-width: 768px;)
-	{
-		.section-title { margin-bottom: 2vw; }
-		.l-list-items { margin-bottom: 10vw; }
-		.size-icons-dot { font-size : 1vw;}
 	}
 
 	/* voir les MQ pour le layout sur mobile  */
