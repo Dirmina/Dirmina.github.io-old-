@@ -249,7 +249,7 @@ ul {
 	@media only screen and (max-width: 768px;)
 	{
 		.section-title { margin-bottom: 2vw; }
-		.l-list-items { margin-bottom: 2vw; }
+		.l-list-items { margin-bottom: 10vw; }
 		.size-icons-dot { font-size : 1vw;}
 	}
 
