@@ -178,7 +178,7 @@ ul {
 <------------------                $Others                  ------------------>
 <------------------------------------------------------------------------->*/
 
-@media only screen and (max-width: 970px) and (orientation: portrait) { /*tablets and phone portrait */
+@media only screen and (max-width: 991px) and (orientation: portrait) { /*tablets and phone portrait */
 
 	/*<------------------------------------------------------------------------>
 	<------------------                $base                   ------------------>
