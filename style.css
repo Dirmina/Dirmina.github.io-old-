@@ -172,14 +172,13 @@ ul {
 /*<------------------------------------------------------------------------>
 <------------------                $status                  ------------------>
 <------------------------------------------------------------------------->*/
-.is-header-xs {display: none;}
 .is-hidden-md { display:none; }
 
 /*<------------------------------------------------------------------------>
 <------------------                $Others                  ------------------>
 <------------------------------------------------------------------------->*/
 
-@media only screen and (max-width: 991px) {
+@media only screen and (max-width: 767.98px) {
 
 	/*<------------------------------------------------------------------------>
 	<------------------                $base                   ------------------>
@@ -246,4 +245,14 @@ ul {
 	<------------------------------------------------------------------------->*/
 	}
 
-	/* voir les MQ pour le layout sur mobile  */
+	/* voir les MQ pour le layout sur mobile en vertical  :@ */
+	/*Se renseigner sur le partage sur les réseaux sociaux */
+	/*Git Github */
+	/* Rebase de l'historique */
+	
+
+	/* Situation, Obstacle, Actions, Résultat 
+	Présentation en 2mn */
+	/*Préciser la disponibilité */
+	/*comment je gere un projet ?
+	collecter les exigences d'un client, proposer une solution, cahier des charges, devis, signature du contrat, faire des réunion fréquentes, */
