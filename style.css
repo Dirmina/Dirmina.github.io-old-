@@ -64,10 +64,10 @@ h1,h2,h3 {
 	font-family: RobotoThin, Arial, sans-serif;
 }
 
-strong { color: #fff; }
+strong { color:  #29B6F6; }
 mark {
 	background-color: #EFEBE9;
-	border-bottom: 1px #fff solid;
+	border-bottom: 1px #29B6F6 solid;
 }
 img {
 	width: 100%;
@@ -103,9 +103,16 @@ ul {
 .l-items-content {width:100%; padding-left: 1rem;}
 .l-items-softskills { 
 	padding-top: 2.5rem;
-	justify-content: space-around; 
+	justify-content: center; 
 	text-align: center;
 	font-weight: bold; 
+	flex-wrap: wrap;
+}
+.l-softskills-content{
+	margin-top: 1rem;
+	padding-left: 1rem;
+	padding-right: 1rem;
+	border-left: 1px #29B6F6 solid;
 }
 
 .l-aside-about {
@@ -136,6 +143,23 @@ ul {
 	padding: 0.7rem;
 }
 
+.nav-style {
+	background-color: #37474F;
+	padding-top: 0.2rem;
+	padding-bottom: 0.2rem;
+	flex-wrap: wrap;
+}
+
+.nav-items {
+	color: #fff;
+	text-decoration: none;
+	font-size: 1.7vw;
+}
+.nav-items:hover {
+	font-size: 1.7vw;
+	font-weight: normal;
+	text-decoration: underline;
+}
 .section-icons {
 	color :#29B6F6;
 	padding-left: 1rem;
@@ -178,7 +202,7 @@ ul {
 <------------------                $Others                  ------------------>
 <------------------------------------------------------------------------->*/
 
-@media only screen and (max-width: 991px) and (orientation: portrait) { /*tablets and phone portrait */
+@media only screen and (max-width: 767.98px) { /*tablets and phone portrait */
 
 	/*<------------------------------------------------------------------------>
 	<------------------                $base                   ------------------>
@@ -249,7 +273,15 @@ ul {
 	/*Se renseigner sur le partage sur les réseaux sociaux */
 	/*Git Github */
 	/* Rebase de l'historique */
-	
+
+
+	/* h2 du header enlever le student Check~~~~~~~~~~~~~~~~~~*/
+	/* couleur du prénom  Check~~~~~~~~~~~~~~~~~~~~~~~~*/
+	/* expérience guitare à réduire */
+	/* Compétences : mettre des mots clés pour les RH (sources : fiche ROM, voir les annonces */
+	/* Réseau social : linkedin Check~~~~~~~~~~*/
+	/* créer un menu de navigation Check~~~~*/
+
 
 	/* Situation, Obstacle, Actions, Résultat 
 	Présentation en 2mn */
