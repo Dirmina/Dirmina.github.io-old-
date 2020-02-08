@@ -253,14 +253,13 @@ ul {
 	.mark-xs{ background-color: #EFEBE9;}
 	.last-div-color-xs{ background-color: #29B6F6;}
 
-	.nav-items { font-size: 1rem; }
+	.nav-items { font-size: 1rem;}
 
-	.section-header-h1 {font-size: 5rem;}
-	.section-header-h2 {font-size: 3.5rem;}
+	.section-header-h2 {font-size: 3.9vw;}
 
 	.section-h3 { font-size: 1.4rem;}
 	.section-h4 {font-size: 0.8rem;}
-	.size-icons-dot {margin: auto; font-size: 0.7rem;}
+	.size-icons-dot {paddin-top: 1rem; font-size: 0.7rem;}
 	.list-title-style { font-size: 1.2rem;}
 	.last-p-style { font-size: 1.1rem;}
 
