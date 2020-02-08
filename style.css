@@ -75,6 +75,8 @@ img {
 	padding-top: 1rem;
 	padding-bottom: 1rem;
 }
+
+
 ul {	
 	list-style: none; 
 	padding: 0;
@@ -147,6 +149,7 @@ ul {
 	background-color: #37474F;
 	padding-top: 0.2rem;
 	padding-bottom: 0.2rem;
+	border: 5px #D7CCC8 solid;
 	flex-wrap: wrap;
 }
 
@@ -216,6 +219,7 @@ ul {
 		aside {
 			width: 100%;
 		}
+		a:hover {font-size: 2rem;}
 		figure { width: 33.3333334%; }
 
 
@@ -252,13 +256,15 @@ ul {
 	.mark-xs{ background-color: #EFEBE9;}
 	.last-div-color-xs{ background-color: #29B6F6;}
 
-	.nav-items { font-size: 1rem;}
+	.nav-items { font-size: 2rem;}
+	.nav-items:hover {font-size: 2rem;}
 
 	.section-header-h2 {font-size: 3.9vw;}
 
-	.hardskills-xs { font-size: 1.2rem; }
+	.hardskills-xs { font-size: 2rem; }
 
-	.contact-xs { font-size: 1.1rem;}
+	.contact-xs { font-size: 2rem;}
+
 
 	.section-h3 { font-size: 1.4rem;}
 	.section-h4 {font-size: 0.8rem;}
