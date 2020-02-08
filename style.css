@@ -203,8 +203,9 @@ ul {
 <------------------------------------------------------------------------->*/
 
 @media	only screen 
-		and (max-device-width: 767.98px;) /*phone */
-		or (max-device-width: 2180px; max-width: 991px;) /*windows resizing under 991px on desktop*/{ 
+		and (max-device-width: 767.98px) /*phone */
+ 		or (max-device-width:2180px) and (max-width: 991px;) /*windows resizing under 991px on desktop*/
+		{ 
 
 	/*<------------------------------------------------------------------------>
 	<------------------                $base                   ------------------>
