@@ -68,6 +68,7 @@ strong { color:  #29B6F6; }
 mark {
 	background-color: #EFEBE9;
 	border-bottom: 1px #29B6F6 solid;
+	color: #37474F;
 }
 img {
 	width: 100%;
@@ -237,7 +238,7 @@ ul {
 	.l-aside-contact-xs {margin-top: 0;}
 
 	.l-main-section {margin: 0;}
-	.l-main-section-xs {   padding-left: 1rem; padding-right: 1rem; }
+	.l-main-section-xs {margin-left: 1rem; margin-right: 1rem; }
 
 	.l-list-items {display:block; /*padding-top: 1.3vw;*/}
 	.l-items-date { width: 100%;}
