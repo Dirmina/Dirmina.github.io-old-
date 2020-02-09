@@ -288,18 +288,25 @@ ul {
 			a:hover {font-size: 2rem;}
 			.l-hardskills-items-xs {padding-left: 2rem; padding-right: 2rem;}
 
+			.l-dot-xs { margin-top: 2rem; }
+
 			.section-title { 
 			text-align: center;
 			margin-left: 2rem;
 		  	margin-right: 2rem;
 		  	margin-top: 4rem; 
 			}
+
+			.section-icons {
+				padding-left: 2rem;
+				padding-right: 2rem;
+			}
 			.nav-items { font-size: 2rem;}
 			.nav-items:hover {font-size: 2rem;}
 
 			.list-title-style { font-size: 2rem; }
 
-			.size-icons-dot {font-size: 1rem; margin-top: 3rem;}
+			.size-icons-dot {font-size: 1rem;}
 
 			.hardskills-hobbies-xs { font-size: 2rem; }
 
