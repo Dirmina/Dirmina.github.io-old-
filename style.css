@@ -232,12 +232,12 @@ ul {
 		display:flex; 
 		flex-direction: row; 
 		background-color: #EFEBE9;
-		/*padding-bottom: 2rem; */
 	}
 	.l-aside-header-div {align-self: center;}
 	.l-aside-contact-xs {margin-top: 0;}
 
 	.l-main-section {margin: 0;}
+	.l-main-section-xs {   padding-left: 1rem; padding-right: 1rem; }
 
 	.l-list-items {display:block; /*padding-top: 1.3vw;*/}
 	.l-items-date { width: 100%;}
@@ -245,10 +245,12 @@ ul {
 	.last-p-style { margin-top: 0; }
 	.section-title { 
 		text-align: center;
-	/* margin-left: 2rem;
+		margin-left: 2rem;
 	  	margin-right: 2rem;
-	  	margin-top: 2rem; */
+	  	margin-top: 2rem; 
 	  }
+	.l-softskills-content {border: none;}
+
 
 	/*<------------------------------------------------------------------------>
 	<------------------                $module                   ------------------>
