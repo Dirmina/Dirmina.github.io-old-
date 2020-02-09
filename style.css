@@ -220,7 +220,7 @@ ul {
 		aside {
 			width: 100%;
 		}
-		a:hover {font-size: 2rem;}
+		
 		figure { width: 33.3333334%; }
 
 
@@ -240,17 +240,13 @@ ul {
 	.l-main-section {margin: 0;}
 	.l-main-section-xs {margin-left: 1rem; margin-right: 1rem; }
 
-	.l-list-items {display:block; /*padding-top: 1.3vw;*/}
+	.l-list-items {display:block;}
 	.l-items-date { width: 100%;}
 	.l-list-icons { flex-wrap: wrap;}
 	.last-p-style { margin-top: 0; padding-right: 3rem; font-size: 1.1rem; text-align: justify; }
-	.section-title { 
-		text-align: center;
-		margin-left: 2rem;
-	  	margin-right: 2rem;
-	  	margin-top: 2rem; 
-	  }
-	.l-hardskills-items-xs {padding-left: 2rem; padding-right: 2rem;}
+	
+	 
+	
 	.l-softskills-content {border: none;}
 
 	.l-p-about { padding-left: 3rem; padding-right: 3rem; }
@@ -262,24 +258,17 @@ ul {
 	.mark-xs{ background-color: #EFEBE9;}
 	.last-div-color-xs{ background-color: #29B6F6;}
 
-	.nav-items { font-size: 2rem;}
-	.nav-items:hover {font-size: 2rem;}
+
 
 	.section-header-h2 {font-size: 3.9vw;}
 
-	.hardskills-hobbies-xs { font-size: 2rem; }
-
-	.contact-xs { font-size: 2rem;}
-
-	.hardskills-xs { font-size: 1.5rem; }
+	
 	.section-h3 { font-size: 1.4rem;}
 	.section-h4 {font-size: 0.8rem;}
 
-	.size-icons-dot {font-size: 0.7rem;}
+	
 
-	.list-title-style { font-size: 1.2rem;}
-
-	.last-p-style {}
+	
 
 
 
@@ -292,20 +281,57 @@ ul {
 		/*<------------------------------------------------------------------------>
 	<------------------                $others                   ------------------>
 	<------------------------------------------------------------------------->*/
-	}
+}
+	@media (max-device-width: 767.98px) {
+			a:hover {font-size: 2rem;}
+			.l-hardskills-items-xs {padding-left: 2rem; padding-right: 2rem;}
 
-	/* voir les MQ pour le layout sur mobile en vertical  :@ */
-	/*Se renseigner sur le partage sur les réseaux sociaux */
-	/*Git Github */
-	/* Rebase de l'historique */
+			.section-title { 
+			text-align: center;
+			margin-left: 2rem;
+		  	margin-right: 2rem;
+		  	margin-top: 4rem; 
+			}
+			.nav-items { font-size: 2rem;}
+			.nav-items:hover {font-size: 2rem;}
+
+			.list-title-style { font-size: 2rem; }
+
+			.size-icons-dot {font-size: 1rem;}
+
+			.hardskills-hobbies-xs { font-size: 2rem; }
+
+			.contact-xs { font-size: 2rem;}
+
+		}
+
+		@media (min-device-width:991px) and (max-width: 767.98px) /*windows resizing under 768px on desktop*/{
+			a:hover {font-size: 1rem;}
+
+			.l-hardskills-items-xs {padding-left: 1rem; padding-right: 1rem;}
+
+			.section-title { 
+			text-align: center;
+			margin-left: 2rem;
+		  	margin-right: 2rem;
+		  	margin-top: 2rem;
+		  	}
+
+		  	.nav-items { font-size: 0.8rem;}
+			.nav-items:hover {font-size: 0.8rem;}
 
 
-	/* h2 du header enlever le student Check~~~~~~~~~~~~~~~~~~*/
-	/* couleur du prénom  Check~~~~~~~~~~~~~~~~~~~~~~~~*/
-	/* expérience guitare à réduire */
-	/* Compétences : mettre des mots clés pour les RH (sources : fiche ROM, voir les annonces */
-	/* Réseau social : linkedin Check~~~~~~~~~~*/
-	/* créer un menu de navigation Check~~~~*/
+			.size-icons-dot {font-size: 0.7rem;}
+
+			.hardskills-hobbies-xs { font-size: 1rem; }
+
+			.list-title-style { font-size: 1.2rem;}
+
+			.is-hidden-xs {display: none;}
+			.is-hidden-md { display: block; }
+			
+		}
+	
 
 
 	/* Situation, Obstacle, Actions, Résultat 
