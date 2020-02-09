@@ -45,6 +45,7 @@ body {
 	background-color: #EFEBE9;
 	color: #37474F;
 	display: flex;
+	white-space: initial;
 }
 aside {
 	width:33.3333333334%;
@@ -58,7 +59,7 @@ a:hover
 	font-weight: bold;
 	font-size: 1.35vw;
 }
-section{width: 100%;}
+
 
 h1,h2,h3 {
 	font-family: RobotoThin, Arial, sans-serif;
@@ -184,6 +185,7 @@ ul {
 		margin-top: 1rem;
 		font-size: 1.95vw;
 		font-weight: bold;
+		width: 95%;
 	}
 	.section-h4 {
 		font-size: 1.17vw;
@@ -297,7 +299,7 @@ ul {
 
 			.list-title-style { font-size: 2rem; }
 
-			.size-icons-dot {font-size: 1rem;}
+			.size-icons-dot {font-size: 1rem; margin-top: 3rem;}
 
 			.hardskills-hobbies-xs { font-size: 2rem; }
 
