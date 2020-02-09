@@ -243,7 +243,7 @@ ul {
 	.l-list-items {display:block; /*padding-top: 1.3vw;*/}
 	.l-items-date { width: 100%;}
 	.l-list-icons { flex-wrap: wrap;}
-	.last-p-style { margin-top: 0; }
+	.last-p-style { margin-top: 0; padding-right: 3rem; font-size: 1.1rem; text-align: justify; }
 	.section-title { 
 		text-align: center;
 		margin-left: 2rem;
@@ -276,7 +276,7 @@ ul {
 
 	.list-title-style { font-size: 1.2rem;}
 
-	.last-p-style { font-size: 1.1rem;}
+	.last-p-style {}
 
 
 
