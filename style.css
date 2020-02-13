@@ -317,6 +317,7 @@ ul {
 			}
 
 			.l-dot-xs {
+				display:inline-block;
 				margin-top: 2rem;
 				margin-right: 2rem;
 			}
