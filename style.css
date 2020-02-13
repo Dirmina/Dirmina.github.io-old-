@@ -327,17 +327,22 @@ ul {
 				padding-left: 2rem;
 				padding-right: 2rem;
 			}
+			.l-items-date {padding-left: 2rem;}
+			.l-items-content {padding-left: 2rem;}
 
 			.nav-items {font-size: 2rem;}
 				.nav-items:hover {font-size: 2rem;}
 
 			.list-title-style {font-size: 2rem;}
 
+			.disponibilite-xs { font-size: 1.5rem; }
+
 			.size-icons-dot {font-size: 1rem;}
 
 			.hardskills-hobbies-xs {font-size: 2rem;}
 
 			.contact-xs {font-size: 2rem;}
+			.l-contact-xs { text-align: center; }
 
 		}
 
