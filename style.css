@@ -92,7 +92,7 @@ ul {
 	flex-wrap: wrap;
 }
 
-.l-list-contact {flex-direction: column; padding-top: 0.5rem;}
+.l-list-contact {padding-left: 2rem; padding-top: 0.5rem;}
 .l-contact-icons {
 	display:block;
 	padding-bottom: 0.5rem;
@@ -144,8 +144,8 @@ ul {
 	flex: 2;
 }
 .l-p-about {
-	padding-left: 1rem;
-	padding-right: 1rem;
+	padding-left: 2rem;
+	padding-right: 2rem;
 	text-align: justify;
 }
 .l-main-section {margin: 3rem;}
@@ -186,6 +186,13 @@ ul {
 		text-decoration: underline;
 	}
 
+.l-creation {
+	padding-left: 2rem;
+	margin-right: 2rem;
+	list-style: initial;
+
+	text-align: justify;
+}
 
 .section-header-h1{font-size: 6.5vw;}
 .section-header-h2 {font-size: 2.6vw;}
@@ -343,6 +350,7 @@ ul {
 			}
 
 			.l-section-title {margin-top: 2rem;}
+			.l-contact-xs {text-align: center;}
 
 		  	.nav-items {font-size: 0.8rem;}
 				.nav-items:hover {font-size: 0.8rem;}
