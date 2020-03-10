@@ -126,6 +126,14 @@ ul {
 	margin-bottom: 0;
 }
 
+.l-creation {
+	padding-left: 2rem;
+	margin-right: 2rem;
+	list-style: initial;
+
+	text-align: justify;
+}
+
 .l-softskills-list { 
 	padding-top: 2.5rem;
 	justify-content: center; 
@@ -186,14 +194,6 @@ ul {
 		text-decoration: underline;
 	}
 
-.l-creation {
-	padding-left: 2rem;
-	margin-right: 2rem;
-	list-style: initial;
-
-	text-align: justify;
-}
-
 .section-header-h1{font-size: 6.5vw;}
 .section-header-h2 {font-size: 2.6vw;}
 
@@ -221,6 +221,10 @@ ul {
 	font-size: 1.43vw;
 	margin-top: 0;
 }
+.fa-star { color: #D7CCC8; }
+.checked { color: #BCAAA4; }
+.first-star {padding-left: 1rem;}
+
 /*<------------------------------------------------------------------------>
 <------------------                $status                  ------------------>
 <------------------------------------------------------------------------->*/
