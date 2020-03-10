@@ -309,7 +309,6 @@ ul {
 	<------------------------------------------------------------------------->*/
 	.is-hidden-xs {display: none;}
 	.is-hidden-md {display:block;}
-	
 
 	/*<------------------------------------------------------------------------>
 	<------------------                $others                   ------------------>
@@ -333,9 +332,6 @@ ul {
 				padding-left: 2rem;
 				padding-right: 2rem;
 			}
-
-			.l-items-date {padding-left: 2rem;}
-			.l-items-content{padding-left: 2rem;}
 
 			.nav-items {font-size: 2rem;}
 				.nav-items:hover {font-size: 2rem;}
