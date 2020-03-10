@@ -92,7 +92,10 @@ ul {
 	flex-wrap: wrap;
 }
 
-.l-list-contact {padding-left: 2rem; padding-top: 0.5rem;}
+.l-list-contact {
+	padding-left: 2rem;
+	padding-top: 0.5rem;
+}
 .l-contact-icons {
 	display:block;
 	padding-bottom: 0.5rem;
@@ -321,9 +324,7 @@ ul {
 			}
 
 			.l-dot-xs {
-				display:inline-block;
 				margin-top: 2rem;
-				margin-right: 2rem;
 			}
 
 			.l-section-title {margin-top: 4rem;}
@@ -331,15 +332,13 @@ ul {
 				padding-left: 2rem;
 				padding-right: 2rem;
 			}
-			.l-items-date {padding-left: 2rem;}
-			.l-items-content {padding-left: 2rem;}
 
 			.nav-items {font-size: 2rem;}
 				.nav-items:hover {font-size: 2rem;}
 
 			.list-title-style {font-size: 2rem;}
 
-			.disponibilite-xs { font-size: 1.5rem; }
+			.disponibilite-xs { font-size: 2.2vw; }
 
 			.size-icons-dot {font-size: 1rem;}
 
