@@ -298,6 +298,7 @@ ul {
 		font-size: 1.1rem;
 		text-align: justify;
 	}
+	.l-softskills-list {display:block;} 
 	
 	.l-recommandations-xs {text-align: center;}
 
@@ -318,7 +319,7 @@ ul {
 	.section-h3 {font-size: 1.4rem;}
 	.section-h4 {font-size: 0.8rem;}
 
-	.sofskills {border: none;}
+	.softskills {border: none;}
 	/*<------------------------------------------------------------------------>
 	<------------------                $status                   ------------------>
 	<------------------------------------------------------------------------->*/
