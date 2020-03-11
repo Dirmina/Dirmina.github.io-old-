@@ -1,3 +1,6 @@
+/*vw=for font-size desktop fullscreen and some adaptative font on resizing screen;
+rem= for all padding and margin, and font-size on phone and resizing screen;*/
+
 /*<------------------------------------------------------------------------>
 <------------------                $base                   ------------------>
 <------------------------------------------------------------------------->*/
@@ -45,24 +48,28 @@ body {
 	background-color: #EFEBE9;
 	color: #37474F;
 	display: flex;
-	white-space: initial;
 }
 
 aside {
 	width:33.3333333334%;
 	background-color: #29B6F6;
-	display:flex;
-	flex-direction: column;
+	display:flex; /*able flex:2 for l-aside-about*/
+	flex-direction: column; /*flex from body*/
 }
 
-a {color: #37474F;}
-a:hover {font-weight: bold;}
+a {font-weight:normal; color: #37474F;}
+a:hover {
+	font-weight: bold;}
 
 h1,h2,h3 {font-family: RobotoThin, Arial, sans-serif;}
-h4 {padding-top: 0.5rem; padding-bottom: 0.5rem;}
+h4 {
+	padding-top: 0.5rem;
+	padding-bottom: 0.5rem;
+}
 
 strong {color:  #29B6F6;}
-mark {
+
+mark { /*title "Dével-"*/
 	background-color: #EFEBE9;
 	border-bottom: 1px #29B6F6 solid;
 	color: #37474F;
@@ -70,7 +77,7 @@ mark {
 
 img {
 	width: 100%;
-	height:auto;
+	height:auto; /*vertical center*/
 	padding-top: 1rem;
 	padding-bottom: 1rem;
 }
@@ -85,55 +92,37 @@ ul {
 /*<------------------------------------------------------------------------>
 <------------------                $layout                   ------------------>
 <------------------------------------------------------------------------->*/
-.l-list-icons {
+.l-list-icons, .l-list-nav, .l-list-recommendations {
 	display:flex;
 	justify-content: space-around;
 	text-align:center;
 	flex-wrap: wrap;
 }
 
-.l-list-contact {
-	padding-left: 2rem;
-	padding-top: 0.5rem;
-}
-.l-contact-icons {
-	display:block;
-	padding-bottom: 0.5rem;
-}
-
-.l-list-items {
+.l-main-section {margin: 3rem;}
+.l-list-items, .l-softskills-list { /*layout for the each exp and formations + softskills*/
 	display:flex;	
 	text-align: left;
 	margin-top: 2rem;
 }
-.l-items-date {
-	width: 40%;
-	padding-left: 1rem;
+.l-items-date { /*Layout for dates*/
+	width: 40%; /*40% of the main section, not the all body*/
+	padding-left: 1rem; /*space between words and the chip*/
 }
-.l-items-content {
-	width:100%;
+.l-items-content { 
+	width: 100%; /*take all the space available, 60% of the main section */
 	padding-left: 1rem;
 }
 
-.l-section-icons {
-	color: #29B6F6;
-	padding-left: 1rem;
-	padding-right: 1rem;
-}
 .l-section-title {
 	border-bottom: 1px #29B6F6 solid;
 	padding-bottom:0.7rem;
-}
-.l-section-h {
-	margin-top: 0;
-	margin-bottom: 0;
 }
 
 .l-creation {
 	padding-left: 2rem;
 	margin-right: 2rem;
 	list-style: initial;
-
 	text-align: justify;
 }
 
@@ -144,27 +133,18 @@ ul {
 	font-weight: bold; 
 	flex-wrap: wrap;
 }
-.l-softskills-content{
-	margin-top: 1rem;
-	padding-left: 1rem;
-	padding-right: 1rem;
-	border-left: 1px #29B6F6 solid;
-}
 
-.l-aside-about {
+.l-aside-about { /*able by display:flex on the aside*/
 	flex: 2;
 }
-.l-p-about {
-	padding-left: 2rem;
-	padding-right: 2rem;
-	text-align: justify;
-}
-.l-main-section {margin: 3rem;}
 .l-header-section {padding-bottom: 4rem;}
 
 /*<------------------------------------------------------------------------>
 <------------------                $module                   ------------------>
 <------------------------------------------------------------------------->*/
+
+.disco-font {font-family: DiscoRegular;}
+
 .aside-title {
 	color: #EFEBE9;
 	background-color: #37474F;
@@ -172,9 +152,27 @@ ul {
 	padding-bottom: 0.2rem;
 	text-align: center;
 }
+
+.icons { /*for all icons*/
+	color: #29B6F6;
+	padding-left: 1rem;
+	padding-right: 1rem;
+}
+
 .aside-icons {color: #0277BD;}
 
-.icons-circle {
+.list-contact {
+	padding-left: 2rem;
+	padding-top: 0.5rem;
+}
+
+.p-about {
+	padding-left: 2rem;
+	padding-right: 2rem;
+	text-align: justify;
+}
+
+.icons-circle { /*Create a circle around each hobbies' icons*/
 	border: 1px #0277BD solid;
 	border-radius: 50%;
 	padding: 0.7rem;
@@ -186,6 +184,7 @@ ul {
 	padding-bottom: 0.2rem;
 	border: 5px #D7CCC8 solid;
 }
+
 .nav-items {
 	color: #fff;
 	text-decoration: none;
@@ -197,7 +196,12 @@ ul {
 		text-decoration: underline;
 	}
 
-.section-header-h1{font-size: 6.5vw;}
+.section-h {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.section-header-h1{font-size: 6.5vw;} 
 .section-header-h2 {font-size: 2.6vw;}
 
 .section-h3 {
@@ -205,7 +209,6 @@ ul {
 	margin-top: 1rem;
 	font-size: 1.95vw;
 	font-weight: bold;
-	width: 95%;
 }
 .section-h4 {
 	font-size: 1.17vw;
@@ -214,7 +217,13 @@ ul {
 	color: #9E9E9E;
 }
 
-.disco-font {font-family: DiscoRegular;}
+.softskills{
+	margin-top: 1rem;
+	padding-left: 1rem;
+	padding-right: 1rem;
+	border-left: 1px #29B6F6 solid;
+}
+
 .size-icons-dot {font-size: 0.65vw;}
 .list-title-style {
 	font-style: italic;
@@ -224,6 +233,7 @@ ul {
 	font-size: 1.43vw;
 	margin-top: 0;
 }
+
 .fa-star { color: #D7CCC8; }
 .checked { color: #BCAAA4; }
 .first-star {padding-left: 1rem;}
@@ -231,7 +241,7 @@ ul {
 /*<------------------------------------------------------------------------>
 <------------------                $status                  ------------------>
 <------------------------------------------------------------------------->*/
-.is-hidden-md {display: none;}
+.is-hidden-md {display: none;} /*Hide mod for large desktop content*/
 
 /*<------------------------------------------------------------------------>
 <------------------                $Others                  ------------------>
@@ -261,11 +271,11 @@ ul {
 	<------------------------------------------------------------------------->*/
 	.l-aside-header-xs {
 		width: 100%;
-		display: flex; 
+		display: flex; /*img and title side by side*/
 		background-color: #EFEBE9;
 	}
-	.l-aside-header-div {align-self: center;}
-	.l-aside-contact-xs {margin-top: 0;}
+
+	.l-aside-header-titles {align-self: center;}
 
 	.l-main-section {margin: 0;}
 	.l-main-section-xs {
@@ -273,7 +283,14 @@ ul {
 		margin-right: 1rem;
 	}
 
+	.l-section-title { 
+		text-align: center;
+		margin-left: 2rem;
+		margin-right: 2rem;
+	}
+
 	.l-list-items {display: block;}
+
 	.l-items-date {width: 100%;}
 
 	.last-p-style {
@@ -282,39 +299,37 @@ ul {
 		text-align: justify;
 	}
 	
-	.l-softskills-content {border: none;}
 	.l-recommandations-xs {text-align: center;}
 
-	.l-p-about {
-		padding-left: 3rem;
-		padding-right: 3rem;
-	}
+	
 	/*<------------------------------------------------------------------------>
 	<------------------                $module                   ------------------>
 	<------------------------------------------------------------------------->*/
+	.p-about {
+		padding-left: 3rem;
+		padding-right: 3rem;
+	}
+
 	.mark-xs{background-color: #EFEBE9;}
+
 	.last-div-color-xs{background-color: #29B6F6;}
 
-	.l-section-title { 
-		text-align: center;
-		margin-left: 2rem;
-		margin-right: 2rem;
-	}
 	.section-header-h2 {font-size: 3.9vw;}
 	.section-h3 {font-size: 1.4rem;}
 	.section-h4 {font-size: 0.8rem;}
 
+	.sofskills {border: none;}
 	/*<------------------------------------------------------------------------>
 	<------------------                $status                   ------------------>
 	<------------------------------------------------------------------------->*/
-	.is-hidden-xs {display: none;}
-	.is-hidden-md {display:block;}
+	.is-hidden-xs {display: none;} /*Hide mod for bigger content*/
+	.is-hidden-md {display:block;} /*Hide mod for little content*/
 
 	/*<------------------------------------------------------------------------>
 	<------------------                $others                   ------------------>
 	<------------------------------------------------------------------------->*/
 }
-		@media (max-device-width: 767.98px) {
+		@media (max-device-width: 767.98px) { /*Only phone*/
 
 			a:hover {font-size: 2rem;}
 
@@ -328,7 +343,7 @@ ul {
 			}
 
 			.l-section-title {margin-top: 4rem;}
-			.l-section-icons {
+			.icons {
 				padding-left: 2rem;
 				padding-right: 2rem;
 			}
@@ -338,11 +353,8 @@ ul {
 
 			.list-title-style {font-size: 2rem;}
 
-<<<<<<< HEAD
-=======
-			.disponibilite-xs { font-size: 2.2vw; }
+			.disponibilite-xs { font-size: 1.7rem; }
 
->>>>>>> 47a1e22fecbdd4b110cd3978e42b895e1977401e
 			.size-icons-dot {font-size: 1rem;}
 
 			.hardskills-hobbies-xs {font-size: 2rem;}
@@ -373,13 +385,5 @@ ul {
 			.list-title-style {font-size: 1.2rem;}
 
 			.is-hidden-xs {display: none;}
-			.is-hidden-md {display: block;}			
+			.is-hidden-md {display: block;}	
 		}
-	
-
-
-	/* Situation, Obstacle, Actions, Résultat 
-	Présentation en 2mn */
-	/*Préciser la disponibilité */
-	/*comment je gere un projet ?
-	collecter les exigences d'un client, proposer une solution, cahier des charges, devis, signature du contrat, faire des réunion fréquentes, */
