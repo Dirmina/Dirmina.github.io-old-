@@ -145,7 +145,7 @@ tr {
 @media screen and (min-device-width: 768px) and (max-device-width: 991px) {
   .font__table--enchantee {
     border: 1px black solid;
-    text-align: center;
+    margin: 0;
   }
 }
 .font__table--title {
