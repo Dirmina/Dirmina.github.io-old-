@@ -1,0 +1,110 @@
+@import "../Utils/variables";
+@import "../Utils/mixins";
+@import "../Base/base";
+@import url('https://fonts.googleapis.com/css?family=Croissant+One&display=swap'); /*font-family: 'Croissant One' (alafrancaise), Menu Cambria*/
+
+.alafrancaise {
+    background: map-get($colour-card, alafrancaise);
+    @include menu-details;
+}
+    
+.menus {
+    padding: 6.5vw; /*vw for responsive padding*/
+    text-align: center;
+    &__card {
+        width:90%;
+        height: auto;
+        margin: 0;
+        padding: 3.9vw;
+        text-align: center;
+        box-shadow: 0 0 1rem #ededed;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+.font {
+    font-weight: normal;
+    &__title{
+        &--alafrancaise {
+            font-size: 3vw;
+            font-family: 'Croissant One';
+            background: -webkit-linear-gradient(-80deg, map-get($colour-text-alafrancaise, first-title) 0%,map-get($colour-text-alafrancaise, secund) 50%, map-get($colour-text-alafrancaise, last-title) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }            
+    }
+}
+
+tr {
+    height: 3rem;
+}
+
+.font {
+    &__table {
+		&--alafrancaise {
+			font-size: 2.05vw;
+            font-family: Cambria;
+            margin-bottom: 15rem;
+		}	
+	}
+	&__color {
+		&--alafrancaise {
+			&-first {
+				color: map-get($colour-text-alafrancaise, first);
+			}
+			&-secund {
+				color: map-get($colour-text-alafrancaise, secund);
+			}
+			&-third {
+				color: map-get($colour-text-alafrancaise, third);
+			}
+		}
+    }
+}
+
+.table {
+    &__part {
+        height: 10rem;
+        vertical-align: bottom;
+    }  
+    &__cell {
+        &--left {
+            text-align: left;
+            padding-left: 5rem;
+        }
+        &--right {
+            text-align: right;
+            font-weight: bold;
+            padding-right: 5rem;
+        }
+    }
+}
+
+.double-line--first {
+    span {
+        &:before, &:after {
+            border-width: 25vw;
+            border-top: 3px solid map-get($colour-text-alafrancaise, first-title);
+        }
+    }
+}
+
+.double-line--secund {
+    span {
+        &:before, &:after {
+            border-width: 25vw;
+            border-top: 3px solid map-get($colour-text-alafrancaise, secund);
+        }
+    }
+}
+
+.double-line--third {
+    span {
+        &:before, &:after {
+            border-width: 25vw;
+            border-top: 3px solid map-get($colour-text-alafrancaise, third);
+        }
+    }
+}

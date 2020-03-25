@@ -1,0 +1,162 @@
+/* text color */
+/*enchantee icon gradient */
+@import url("https://fonts.googleapis.com/css?family=Devonshire&display=swap");
+body {
+  margin: 0;
+  font-family: arial, sans-serif;
+  font-size: 4vw;
+}
+
+img {
+  display: inline-block;
+  max-width: 15%;
+  max-height: auto;
+}
+
+.header {
+  background: #579c87;
+  color: #fdcb46;
+  padding-top: 0.3rem;
+  padding-bottom: 0.3rem;
+  text-align: center;
+}
+
+.footer {
+  background: #579c87;
+  color: #fdcb46;
+  padding-top: 0.3rem;
+  padding-bottom: 0.3rem;
+}
+.footer__list {
+  padding-left: 20px;
+  padding-right: 20px;
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  font-size: 4vw;
+}
+
+.double-line {
+  position: relative;
+  overflow: hidden;
+}
+.double-line span {
+  display: inline-block;
+  vertical-align: baseline;
+  zoom: 1;
+  *display: inline;
+  *vertical-align: auto;
+  position: relative;
+  padding: 0 5rem;
+}
+.double-line span:before, .double-line span:after {
+  content: " ";
+  display: block;
+  width: 4000px;
+  position: absolute;
+  top: 50%;
+  border-top: 2px solid black;
+}
+.double-line span:before {
+  right: 100%;
+}
+.double-line span:after {
+  left: 100%;
+}
+
+/*font-family: devonshire (enchantee), menu segoe print*/
+img {
+  display: inline-block;
+  max-width: 9%;
+  max-height: auto;
+  vertical-align: text-top;
+}
+
+.img {
+  max-width: 12%;
+}
+
+h2 > span {
+  vertical-align: middle;
+}
+
+.enchantee {
+  background: #fcdfdb;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  height: 750px;
+  margin: 0;
+}
+.enchantee > .menus__card {
+  width: 100%;
+  margin: 0;
+}
+
+.menus {
+  padding: 6.5vw;
+  /*vw for responsive padding*/
+  text-align: center;
+}
+.menus__card {
+  width: 90%;
+  height: auto;
+  margin: 0;
+  padding: 3.9vw;
+  padding-bottom: 6vw;
+  text-align: center;
+  box-shadow: 0 0 1rem #ededed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.font {
+  font-weight: normal;
+}
+.font__title--enchantee {
+  font-family: "Devonshire";
+  margin: 0;
+}
+.font__title--enchantee-last {
+  display: block;
+  padding: 5rem 1rem;
+}
+
+tr {
+  height: 3rem;
+}
+
+th {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+td {
+  padding-top: 1rem;
+}
+
+.font__table--enchantee {
+  font-size: 1.7vw;
+  font-family: "Segoe Print";
+  margin: 1rem 3rem;
+}
+.font__table--title {
+  font-size: 2.5vw;
+  font-weight: bold;
+}
+
+.table__part {
+  height: 10rem;
+  vertical-align: bottom;
+}
+.table__cell--left {
+  text-align: left;
+}
+.table__cell--right {
+  text-align: right;
+  font-weight: bold;
+}
+
+/*# sourceMappingURL=style-menu-enchantee.css.map */

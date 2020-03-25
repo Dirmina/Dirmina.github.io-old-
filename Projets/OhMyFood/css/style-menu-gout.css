@@ -1,0 +1,154 @@
+/* text color */
+/*enchantee icon gradient */
+@import url("https://fonts.googleapis.com/css?family=Kaushan+Script&display=swap");
+body {
+  margin: 0;
+  font-family: arial, sans-serif;
+  font-size: 4vw;
+}
+
+img {
+  display: inline-block;
+  max-width: 15%;
+  max-height: auto;
+}
+
+th {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+td {
+  padding-top: 1rem;
+}
+
+.header {
+  background: #579c87;
+  color: #fdcb46;
+  padding-top: 0.3rem;
+  padding-bottom: 0.3rem;
+  text-align: center;
+}
+
+.footer {
+  background: #579c87;
+  color: #fdcb46;
+  padding-top: 0.3rem;
+  padding-bottom: 0.3rem;
+}
+.footer__list {
+  padding-left: 20px;
+  padding-right: 20px;
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  font-size: 4vw;
+}
+
+.double-line {
+  position: relative;
+  overflow: hidden;
+}
+.double-line span {
+  display: inline-block;
+  vertical-align: baseline;
+  zoom: 1;
+  *display: inline;
+  *vertical-align: auto;
+  position: relative;
+  padding: 0 5rem;
+}
+.double-line span:before, .double-line span:after {
+  content: " ";
+  display: block;
+  width: 4000px;
+  position: absolute;
+  top: 50%;
+  border-top: 2px solid black;
+}
+.double-line span:before {
+  right: 100%;
+}
+.double-line span:after {
+  left: 100%;
+}
+
+/* font-family: kaushan script (gout)*/
+.gout {
+  background: #fdfffd;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  height: 750px;
+}
+.gout > .menus__card {
+  width: 100%;
+  margin: 0;
+}
+
+.menus {
+  padding: 6.5vw;
+  /*vw for responsive padding*/
+  text-align: center;
+}
+.menus__card {
+  width: 90%;
+  height: auto;
+  margin: 0;
+  padding: 3.9vw;
+  padding-bottom: 6vw;
+  text-align: center;
+  box-shadow: 0 0 1rem #ededed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.font {
+  font-weight: normal;
+}
+.font__title--gout {
+  font-family: "kaushan script";
+  font-weight: normal;
+  font-style: italic;
+  font-size: 8vw;
+  background: -webkit-linear-gradient(-80deg, #41963c 0%, #80cb5e 50%, #beff7f 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+tr {
+  height: 3rem;
+}
+
+th {
+  font-size: 2vw;
+}
+
+.font__table--gout {
+  font-size: 1.6vw;
+  font-family: "Segoe Print";
+  margin-bottom: 11rem;
+}
+
+.table__row--last {
+  padding-bottom: 5rem;
+}
+.table__cell--left {
+  text-align: left;
+  padding-left: 5rem;
+}
+.table__cell--right {
+  text-align: right;
+  font-weight: bold;
+  padding-right: 5rem;
+}
+
+.double-line--gradient {
+  height: 10%;
+  background: linear-gradient(to right, #41963c, #80cb5e, #beff7f, #fff, #fff, #fff, #fff, #beff7f, #80cb5e, #41963c) no-repeat center;
+  background-size: 1000px 5px;
+}
+
+/*# sourceMappingURL=style-menu-gout.css.map */

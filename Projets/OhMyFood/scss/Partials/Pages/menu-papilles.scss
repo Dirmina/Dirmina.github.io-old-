@@ -1,0 +1,101 @@
+@import "../Utils/variables";
+@import "../Utils/mixins";
+@import "../Base/base";
+@import url('https://fonts.googleapis.com/css?family=Cookie&display=swap'); /*font-family: cookie (papilles/gout)*/
+
+.papilles {
+    background: map-get($colour-card, papilles);
+    @include menu-details;
+}
+.menus {
+    padding: 6.5vw; /*vw for responsive padding*/
+    text-align: center;
+    &__card {
+        width:90%;
+        height: auto;
+        margin: 0;
+        padding: 3.9vw;
+        padding-bottom: 6vw;
+        text-align: center;
+        box-shadow: 0 0 1rem #ededed;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+.font {
+    font-weight: normal;
+    &__title {   
+        &--papilles {
+            font-family: 'cookie';
+            font-weight: normal;
+            font-style: italic;
+            font-size: 10vw;
+            background: -webkit-linear-gradient(-80deg, map-get($colour-text-papilles, first) 0%,map-get($colour-text-papilles, secund) 50%, map-get($colour-text-papilles, third) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    }
+}
+tr {
+    height: 3rem;
+}
+.font {
+    &__table {
+		&--papilles {
+		font-size: 1.7vw;
+        font-family: "Segoe Print";
+        margin-bottom: 11rem;
+		}
+	}
+}
+.table {
+    &__part {
+        height: 10rem;
+        vertical-align: bottom;
+        font-size: 2vw;
+    }  
+    &__cell {
+        &--th {
+            border:1px black solid;
+            
+        }
+        &--left {
+            text-align: left;
+            padding-left: 5rem;
+        }
+        &--right {
+            text-align: right;
+            font-weight: bold;
+            padding-right: 5rem;
+
+        }
+    }
+}
+
+.double-line--first {
+    span {
+        &:before, &:after {
+            border-width: 25vw;
+            border-top: 5px solid map-get($colour-text-papilles, first);
+        }
+    }
+}
+
+.double-line--secund {
+    span {
+        &:before, &:after {
+            border-width: 25vw;
+            border-top: 5px solid map-get($colour-text-papilles, secund);
+        }
+    }
+}
+
+.double-line--third {
+    span {
+        &:before, &:after {
+            border-width: 25vw;
+            border-top: 5px solid map-get($colour-text-papilles, third);
+        }
+    }
+}

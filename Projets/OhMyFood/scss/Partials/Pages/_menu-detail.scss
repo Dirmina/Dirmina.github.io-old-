@@ -1,0 +1,96 @@
+@import "../Utils/variables";
+@import "../Utils/mixins";
+@import "../Base/base";
+@import url('https://fonts.googleapis.com/css?family=Devonshire&display=swap'); /*font-family: devonshire (enchantee), menu segoe print*/
+@import url('https://fonts.googleapis.com/css?family=Croissant+One&display=swap'); /*font-family: 'Croissant One' (alafrancaise), Menu Cambria*/
+@import url('https://fonts.googleapis.com/css?family=Cookie&display=swap'); /*font-family: cookie (papilles/gout)*/
+
+
+.enchantee{
+    background: map-get($colour-card,enchantee);
+   @include menu-details;
+   margin: 0;
+    }
+    
+.menus {
+    padding: 6.5vw; /*vw for responsive padding*/
+    text-align: center;
+    &__card {
+        width:90%;
+        height: auto;
+        margin: 0;
+        padding: 3.9vw;
+        padding-bottom: 6vw;
+        text-align: center;
+        box-shadow: 0 0 1rem #ededed;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+    .font {
+        font-weight: normal;
+        &__title{
+            &--enchantee {
+            font-family: 'Devonshire';
+            }    
+        }
+    }
+
+tr {
+    height: 3rem;
+}
+
+.font {
+    &__table {
+		&--enchantee {
+		font-size: 1.8vw;
+		font-family: "Segoe Print";
+		}
+		&--title {
+			font-size: 2.5vw;
+			font-weight:bold;
+		}
+	}
+	&__color {
+		&--alafrancaise {
+			&-first {
+				color: map-get($colour-text-alafrancaise, first);
+			}
+			&-secund {
+				color: map-get($colour-text-alafrancaise, secund);
+			}
+			&-third {
+				color: map-get($colour-text-alafrancaise, third);
+			}
+		}
+    }
+    &__title {
+        &--menupage {
+            font-size: 10vw;
+        }
+    }
+}
+
+.table {
+    &__part {
+        height: 10rem;
+        vertical-align: bottom;
+    }  
+    &__cell {
+        &--th {
+            border:1px black solid;
+            
+        }
+        &--left {
+            text-align: left;
+        }
+        &--right {
+            text-align: right;
+            font-weight: bold;
+        }
+    }
+}
+
+

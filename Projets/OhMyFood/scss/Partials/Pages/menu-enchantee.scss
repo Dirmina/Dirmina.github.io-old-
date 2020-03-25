@@ -1,0 +1,87 @@
+@import "../Utils/variables";
+@import "../Utils/mixins";
+@import "../Base/base";
+@import url('https://fonts.googleapis.com/css?family=Devonshire&display=swap'); /*font-family: devonshire (enchantee), menu segoe print*/
+
+img {
+	display:inline-block;
+	max-width: 9%;
+    max-height: auto;
+    vertical-align: text-top;
+}
+
+.img {
+    max-width: 12%;
+}
+h2 > span { vertical-align: middle;}
+
+.enchantee{
+    background: map-get($colour-card,enchantee);
+    @include menu-details;
+    margin: 0; 
+    }
+    
+.menus {
+    padding: 6.5vw; /*vw for responsive padding*/
+    text-align: center;
+    &__card {
+        width:90%;
+        height: auto;
+        margin: 0;
+        padding: 3.9vw;
+        padding-bottom: 6vw;
+        text-align: center;
+        box-shadow: 0 0 1rem #ededed;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+    .font {
+        font-weight: normal;
+        &__title{
+            &--enchantee {
+            font-family: 'Devonshire';
+            margin: 0;
+                &-last {
+                    display: block;
+                    padding: 5rem 1rem;
+                }
+            }    
+        }
+    }
+
+tr {
+    height: 3rem;
+}
+
+.font {
+    &__table {
+		&--enchantee {
+		font-size: 1.7vw;
+        font-family: "Segoe Print";
+        margin: 1rem 3rem;
+		}
+		&--title {
+			font-size: 2.5vw;
+			font-weight:bold;
+		}
+    }
+}
+
+.table {
+    &__part {
+        height: 10rem;
+        vertical-align: bottom;
+    }  
+    &__cell {
+        &--left {
+            text-align: left;
+        }
+        &--right {
+            text-align: right;
+            font-weight: bold;
+        }
+    }
+}

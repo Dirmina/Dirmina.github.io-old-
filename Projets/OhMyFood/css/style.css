@@ -1,0 +1,189 @@
+/* text color */
+/*enchantee icon gradient */
+@import url("https://fonts.googleapis.com/css?family=Devonshire&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Croissant+One&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Cookie&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Kaushan+Script&display=swap");
+body {
+  margin: 0;
+  font-family: arial, sans-serif;
+  font-size: 4vw;
+}
+
+img {
+  display: inline-block;
+  max-width: 15%;
+  max-height: auto;
+}
+
+th {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+td {
+  padding-top: 1rem;
+}
+
+.header {
+  background: #579c87;
+  color: #fdcb46;
+  padding-top: 0.3rem;
+  padding-bottom: 0.3rem;
+  text-align: center;
+}
+
+.footer {
+  background: #579c87;
+  color: #fdcb46;
+  padding-top: 0.3rem;
+  padding-bottom: 0.3rem;
+}
+.footer__list {
+  padding-left: 20px;
+  padding-right: 20px;
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  font-size: 4vw;
+}
+
+.double-line {
+  position: relative;
+  overflow: hidden;
+}
+.double-line span {
+  display: inline-block;
+  vertical-align: baseline;
+  zoom: 1;
+  *display: inline;
+  *vertical-align: auto;
+  position: relative;
+  padding: 0 5rem;
+}
+.double-line span:before, .double-line span:after {
+  content: " ";
+  display: block;
+  width: 4000px;
+  position: absolute;
+  top: 50%;
+  border-top: 2px solid black;
+}
+.double-line span:before {
+  right: 100%;
+}
+.double-line span:after {
+  left: 100%;
+}
+
+/*font-family: devonshire (enchantee), menu segoe print*/
+/*font-family: 'Croissant One' (alafrancaise), Menu Cambria*/
+/*font-family: cookie (papilles)*/
+/*font-family: Kaushan script (gout) */
+a {
+  display: block;
+  color: #000;
+  text-decoration: none;
+}
+
+.menus {
+  padding: 2rem 3rem 2rem 3rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  font-size: 3.5vw;
+}
+.menus__card {
+  width: 45%;
+  height: 750px;
+  margin: 1rem;
+  text-align: center;
+  box-shadow: 0 0 1rem #ededed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+@media screen and (min-device-width: 991px) and (max-width: 991px) {
+  .menus__card {
+    width: 90%;
+    height: 350px;
+  }
+}
+.menus__card--orange {
+  background: #fcdfdb;
+}
+.menus__card--pink {
+  background: #fff5fe;
+}
+.menus__card--blue {
+  background: #f9f9f9;
+}
+.menus__card--green {
+  background: #fdfffd;
+}
+
+.font {
+  font-weight: normal;
+}
+.font__title {
+  margin: 0;
+}
+.font__title--enchantee {
+  font-family: "Devonshire";
+}
+.font__title--alafrancaise {
+  font-size: 3vw;
+  font-family: "Croissant One";
+  background: -webkit-linear-gradient(-80deg, #e38a12 0%, #a56799 50%, #8f5aff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.font__title--papilles {
+  font-family: "cookie";
+  font-weight: normal;
+  font-size: 6vw;
+  background: -webkit-linear-gradient(-80deg, #0228dd 0%, #0670f3 50%, #229df9 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.font__title--gout {
+  font-family: "kaushan script";
+  font-weight: normal;
+  font-size: 5vw;
+  background: -webkit-linear-gradient(-80deg, #41963c 0%, #80cb5e 50%, #beff7f 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.font__subtitle--enchantee {
+  font-family: "Segoe Print";
+  font-weight: bold;
+  margin-top: 1rem;
+}
+.font__subtitle--alafrancaise {
+  font-family: "Cambria";
+  font-weight: bold;
+  color: #c77412;
+}
+.font__subtitle--papilles {
+  font-family: "Segoe Print";
+  color: #229df9;
+}
+.font__subtitle--gout {
+  font-family: "Segoe Print";
+  color: #41963c;
+}
+
+.btn--soon {
+  width: 45%;
+  background: #579c87;
+  color: #fdcb46;
+  padding-top: 0.3rem;
+  padding-bottom: 0.3rem;
+  border-radius: 15px;
+  font-size: 4vw;
+  padding: 0.8rem;
+  margin: 2rem;
+  border: none;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,79 @@
+@import "../Utils/variables";
+@import "../Utils/mixins";
+@import "../Base/base";
+@import url('https://fonts.googleapis.com/css?family=Kaushan+Script&display=swap'); /* font-family: kaushan script (gout)*/
+.gout {
+    background: map-get($colour-card, gout);
+    @include menu-details;
+}
+.menus {
+    padding: 6.5vw; /*vw for responsive padding*/
+    text-align: center;
+    &__card {
+        width:90%;
+        height: auto;
+        margin: 0;
+        padding: 3.9vw;
+        padding-bottom: 6vw;
+        text-align: center;
+        box-shadow: 0 0 1rem #ededed;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+.font {
+    font-weight: normal;
+    &__title {   
+        &--gout {
+            font-family: 'kaushan script';
+            font-weight: normal;
+            font-style: italic;
+            font-size: 8vw;
+            background: -webkit-linear-gradient(-80deg, map-get($colour-text-gout, first) 0%,map-get($colour-text-gout, secund) 50%, map-get($colour-text-gout, third) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    }
+}
+tr {
+    height: 3rem;
+}
+th {font-size: 2vw;}
+
+.font {
+    &__table {
+		&--gout {
+		font-size: 1.6vw;
+        font-family: "Segoe Print";
+        margin-bottom: 11rem;
+		}
+	}
+}
+.table {
+    &__row {
+        &--last {
+            padding-bottom: 5rem;
+        }
+    }
+    &__cell {
+        &--left {
+            text-align: left;
+            padding-left: 5rem;
+        }
+        &--right {
+            text-align: right;
+            font-weight: bold;
+            padding-right: 5rem;
+        }
+    }
+}
+
+
+.double-line--gradient {
+    height:10%;   
+    background: linear-gradient(to right, map-get($colour-text-gout, first),map-get($colour-text-gout, secund), map-get($colour-text-gout, third),#fff,#fff, #fff, #fff, map-get($colour-text-gout, third), map-get($colour-text-gout, secund), map-get($colour-text-gout, first)) no-repeat center;
+            background-size:1000px 5px;
+}
+          
+
