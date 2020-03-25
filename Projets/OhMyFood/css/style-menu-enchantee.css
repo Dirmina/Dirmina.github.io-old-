@@ -13,6 +13,15 @@ img {
   max-height: auto;
 }
 
+th {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+td {
+  padding-top: 1rem;
+}
+
 .header {
   background: #579c87;
   color: #fdcb46;
@@ -128,19 +137,15 @@ tr {
   height: 3rem;
 }
 
-th {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-}
-
-td {
-  padding-top: 1rem;
-}
-
 .font__table--enchantee {
   font-size: 1.7vw;
   font-family: "Segoe Print";
   margin: 1rem 3rem;
+}
+@media screen and (max-device-width: 991px) {
+  .font__table--enchantee {
+    margin: 0;
+  }
 }
 .font__table--title {
   font-size: 2.5vw;
