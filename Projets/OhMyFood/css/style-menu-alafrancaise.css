@@ -1,0 +1,166 @@
+/* text color */
+/*enchantee icon gradient */
+@import url("https://fonts.googleapis.com/css?family=Croissant+One&display=swap");
+body {
+  margin: 0;
+  font-family: arial, sans-serif;
+  font-size: 4vw;
+}
+
+img {
+  display: inline-block;
+  max-width: 15%;
+  max-height: auto;
+}
+
+th {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+td {
+  padding-top: 1rem;
+}
+
+.header {
+  background: #579c87;
+  color: #fdcb46;
+  padding-top: 0.3rem;
+  padding-bottom: 0.3rem;
+  text-align: center;
+}
+
+.footer {
+  background: #579c87;
+  color: #fdcb46;
+  padding-top: 0.3rem;
+  padding-bottom: 0.3rem;
+}
+.footer__list {
+  padding-left: 20px;
+  padding-right: 20px;
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  font-size: 4vw;
+}
+
+.double-line {
+  position: relative;
+  overflow: hidden;
+}
+.double-line span {
+  display: inline-block;
+  vertical-align: baseline;
+  zoom: 1;
+  *display: inline;
+  *vertical-align: auto;
+  position: relative;
+  padding: 0 5rem;
+}
+.double-line span:before, .double-line span:after {
+  content: " ";
+  display: block;
+  width: 4000px;
+  position: absolute;
+  top: 50%;
+  border-top: 2px solid black;
+}
+.double-line span:before {
+  right: 100%;
+}
+.double-line span:after {
+  left: 100%;
+}
+
+/*font-family: 'Croissant One' (alafrancaise), Menu Cambria*/
+.alafrancaise {
+  background: #fff5fe;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  height: 750px;
+}
+.alafrancaise > .menus__card {
+  width: 100%;
+  margin: 0;
+}
+
+.menus {
+  padding: 6.5vw;
+  /*vw for responsive padding*/
+  text-align: center;
+}
+.menus__card {
+  width: 90%;
+  height: auto;
+  margin: 0;
+  padding: 3.9vw;
+  text-align: center;
+  box-shadow: 0 0 1rem #ededed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.font {
+  font-weight: normal;
+}
+.font__title--alafrancaise {
+  font-size: 3vw;
+  font-family: "Croissant One";
+  background: -webkit-linear-gradient(-80deg, #e38a12 0%, #a56799 50%, #8f5aff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+tr {
+  height: 3rem;
+}
+
+.font__table--alafrancaise {
+  font-size: 2.05vw;
+  font-family: Cambria;
+  margin-bottom: 15rem;
+}
+.font__color--alafrancaise-first {
+  color: #c77412;
+}
+.font__color--alafrancaise-secund {
+  color: #a56799;
+}
+.font__color--alafrancaise-third {
+  color: #6e4ccc;
+}
+
+.table__part {
+  height: 10rem;
+  vertical-align: bottom;
+}
+.table__cell--left {
+  text-align: left;
+  padding-left: 5rem;
+}
+.table__cell--right {
+  text-align: right;
+  font-weight: bold;
+  padding-right: 5rem;
+}
+
+.double-line--first span:before, .double-line--first span:after {
+  border-width: 25vw;
+  border-top: 3px solid #e38a12;
+}
+
+.double-line--secund span:before, .double-line--secund span:after {
+  border-width: 25vw;
+  border-top: 3px solid #a56799;
+}
+
+.double-line--third span:before, .double-line--third span:after {
+  border-width: 25vw;
+  border-top: 3px solid #6e4ccc;
+}
+
+/*# sourceMappingURL=style-menu-alafrancaise.css.map */

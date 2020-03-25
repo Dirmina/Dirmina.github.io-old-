@@ -1,0 +1,113 @@
+@import "./partials/Utils/variables";
+@import "./partials/Utils/mixins";
+@import "./partials/Base/base";
+@import url('https://fonts.googleapis.com/css?family=Devonshire&display=swap'); /*font-family: devonshire (enchantee), menu segoe print*/
+@import url('https://fonts.googleapis.com/css?family=Croissant+One&display=swap'); /*font-family: 'Croissant One' (alafrancaise), Menu Cambria*/
+@import url('https://fonts.googleapis.com/css?family=Cookie&display=swap'); /*font-family: cookie (papilles)*/
+@import url('https://fonts.googleapis.com/css?family=Kaushan+Script&display=swap'); /*font-family: Kaushan script (gout) */
+
+a {
+	display:block;
+	color: #000;
+	text-decoration: none;
+}
+
+.menus {
+	padding: 2rem 3rem 2rem 3rem;
+	display:flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	font-size:3.5vw;
+	&__card {
+		width:45%;
+		height: 750px;
+		margin: 1rem;
+		text-align: center;
+		box-shadow: 0 0 1rem #ededed;
+		display:flex;
+		flex-direction: column;
+		justify-content: center;
+		@media screen and (min-device-width: 991px) and (max-width: 991px) {
+			width: 90%;
+			height: 350px;
+		}
+		&--orange {
+			background: map-get($colour-card, enchantee);
+		}
+		&--pink {
+			background: map-get($colour-card, alafrancaise);
+		}
+		&--blue {
+			background: map-get($colour-card, papilles);
+		}
+		&--green {
+			background: map-get($colour-card, gout);
+		}
+	}
+}
+
+.font {
+	font-weight: normal;
+	&__title{
+		margin: 0;
+		&--enchantee {
+			font-family: 'Devonshire';
+		}
+		&--alafrancaise {
+			font-size: 3vw;
+			font-family: 'Croissant One';
+			background: -webkit-linear-gradient(-80deg, map-get($colour-text-alafrancaise, first-title) 0%,map-get($colour-text-alafrancaise, secund) 50%, map-get($colour-text-alafrancaise, last-title) 100%);
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+		}
+		&--papilles {
+			font-family: 'cookie';
+			font-weight: normal;
+			font-size: 6vw;
+			background: -webkit-linear-gradient(-80deg, map-get($colour-text-papilles, first) 0%,map-get($colour-text-papilles, secund) 50%, map-get($colour-text-papilles, third) 100%);
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+		}
+		&--gout {
+			font-family: 'kaushan script';
+			font-weight: normal;
+			font-size: 5vw;
+			background: -webkit-linear-gradient(-80deg, map-get($colour-text-gout, first) 0%,map-get($colour-text-gout, secund) 50%, map-get($colour-text-gout, third) 100%);
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+		}
+	}
+	&__subtitle {
+		&--enchantee {
+			font-family:'Segoe Print';
+			font-weight: bold;
+			margin-top: 1rem;
+		}
+		&--alafrancaise {
+			font-family:'Cambria';
+			font-weight: bold;
+			color: map-get($colour-text-alafrancaise, first);
+		}
+		&--papilles {
+			font-family:'Segoe Print';
+			color: map-get($colour-text-papilles, third);
+		}
+		&--gout {
+			font-family: "Segoe Print";
+			color: map-get($colour-text-gout, first);
+
+		}
+	}
+}
+
+.btn {
+	&--soon {
+	width: 45%;
+	@include main-style;
+	border-radius: 15px;
+	font-size: 4vw;
+	padding: 0.8rem;
+	margin: 2rem;
+	border: none;
+	}
+}

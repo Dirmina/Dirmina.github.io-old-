@@ -1,0 +1,22 @@
+@mixin bordertest {
+	border: 1px black solid;
+}
+
+@mixin main-style {
+	background: $colour-primary;
+	color: $colour-secondary;
+	padding-top: 0.3rem;
+	padding-bottom: 0.3rem;	
+}
+
+@mixin menu-details {
+	display:flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    height: 750px;
+    >.menus__card {
+        width:100%;
+        margin: 0;
+    }
+}
