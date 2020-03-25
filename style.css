@@ -238,6 +238,25 @@ ul {
 .checked { color: #BCAAA4; }
 .first-star {padding-left: 1rem;}
 
+
+.ohmyfood {
+	height: 5vw;
+	width: 15vw;
+	text-align: center;
+	display:flex;
+	justify-content: center;
+	align-items:center;
+	font-size: 2.6vw;
+
+}
+.ohmyfood__title {
+	font-family: arial
+}
+.ohmyfood__link {
+	background: #579c87;
+	color:#fdcb46;
+	text-decoration: none;
+}
 /*<------------------------------------------------------------------------>
 <------------------                $status                  ------------------>
 <------------------------------------------------------------------------->*/
