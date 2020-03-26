@@ -227,7 +227,7 @@ tr {
   font-family: "Segoe Print";
   margin: 1rem 3rem;
 }
-@media (min-device-width: 991px) and (max-device-width: 1280px) and (max-width: 991px) {
+@media (min-device-width: 991px) and (max-device-width: 1280px) and (max-width: 991px), (max-device-width: 991px) {
   .font__table--enchantee {
     margin: 0;
     font-size: 2.4vw;
@@ -245,7 +245,7 @@ tr {
 .table__cell--left {
   text-align: left;
 }
-@media (min-device-width: 991px) and (max-device-width: 1280px) and (max-width: 991px) {
+@media (min-device-width: 991px) and (max-device-width: 1280px) and (max-width: 991px), (max-device-width: 991px) {
   .table__cell--left {
     padding-right: 10vw;
   }

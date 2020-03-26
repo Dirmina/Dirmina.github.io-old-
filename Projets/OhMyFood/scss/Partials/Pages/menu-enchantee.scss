@@ -63,7 +63,7 @@ tr {
 		font-size: 1.7vw;
         font-family: "Segoe Print";
         margin: 1rem 3rem;
-        @media (min-device-width:991px) and (max-device-width:1280px) and (max-width:991px) {
+        @media (min-device-width:991px) and (max-device-width:1280px) and (max-width:991px), (max-device-width:991px) {
             margin: 0;
             font-size: 2.4vw;
         }
@@ -83,7 +83,7 @@ tr {
     &__cell {
         &--left {
             text-align: left;
-            @media (min-device-width:991px) and (max-device-width:1280px) and (max-width:991px) {
+            @media (min-device-width:991px) and (max-device-width:1280px) and (max-width:991px), (max-device-width:991px)  {
 				padding-right: 10vw;
             }
             
