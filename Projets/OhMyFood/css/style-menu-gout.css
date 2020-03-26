@@ -216,7 +216,7 @@ th {
   font-family: "Segoe Print";
   margin-bottom: 11rem;
 }
-@media (min-device-width: 991px) and (max-device-width: 1280px) and (max-width: 991px) {
+@media (min-device-width: 991px) and (max-device-width: 1280px) and (max-width: 991px), (max-device-width: 991px) {
   .font__table--gout {
     margin: 0;
     font-size: 2.4vw;
@@ -230,7 +230,7 @@ th {
   text-align: left;
   padding-left: 5rem;
 }
-@media (min-device-width: 991px) and (max-device-width: 1280px) and (max-width: 991px) {
+@media (min-device-width: 991px) and (max-device-width: 1280px) and (max-width: 991px), (max-device-width: 991px) {
   .table__cell--left {
     padding-left: 1rem;
     padding-right: 10vw;
@@ -241,7 +241,7 @@ th {
   font-weight: bold;
   padding-right: 5rem;
 }
-@media (min-device-width: 991px) and (max-device-width: 1280px) and (max-width: 991px) {
+@media (min-device-width: 991px) and (max-device-width: 1280px) and (max-width: 991px), (max-device-width: 991px) {
   .table__cell--right {
     padding-right: 1rem;
   }
