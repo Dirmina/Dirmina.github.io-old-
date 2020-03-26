@@ -1,7 +1,9 @@
 @import "../Utils/variables";
 @import "../Utils/mixins";
 @import "../Base/base";
+@import "../Components/animations";
 @import url('https://fonts.googleapis.com/css?family=Kaushan+Script&display=swap'); /* font-family: kaushan script (gout)*/
+
 .gout {
     background: map-get($colour-card, gout);
     @include menu-details;
@@ -47,6 +49,10 @@ th {font-size: 2vw;}
 		font-size: 1.6vw;
         font-family: "Segoe Print";
         margin-bottom: 11rem;
+        @media (min-device-width:991px) and (max-device-width:1280px) and (max-width:991px) {
+            margin: 0;
+            font-size: 2.4vw;
+        }
 		}
 	}
 }
@@ -60,11 +66,18 @@ th {font-size: 2vw;}
         &--left {
             text-align: left;
             padding-left: 5rem;
+            @media (min-device-width:991px) and (max-device-width:1280px) and (max-width:991px) {
+                padding-left: 1rem;
+                padding-right: 10vw;
+			}
         }
         &--right {
             text-align: right;
             font-weight: bold;
             padding-right: 5rem;
+            @media (min-device-width:991px) and (max-device-width:1280px) and (max-width:991px) {
+				padding-right: 1rem;
+			}
         }
     }
 }
@@ -73,7 +86,7 @@ th {font-size: 2vw;}
 .double-line--gradient {
     height:10%;   
     background: linear-gradient(to right, map-get($colour-text-gout, first),map-get($colour-text-gout, secund), map-get($colour-text-gout, third),#fff,#fff, #fff, #fff, map-get($colour-text-gout, third), map-get($colour-text-gout, secund), map-get($colour-text-gout, first)) no-repeat center;
-            background-size:1000px 5px;
+    background-size:90vw 5px;
 }
           
 

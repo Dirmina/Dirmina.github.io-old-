@@ -1,6 +1,7 @@
 @import "../Utils/variables";
 @import "../Utils/mixins";
 @import "../Base/base";
+@import "../Components/animations";
 @import url('https://fonts.googleapis.com/css?family=Devonshire&display=swap'); /*font-family: devonshire (enchantee), menu segoe print*/
 
 img {
@@ -62,6 +63,10 @@ tr {
 		font-size: 1.7vw;
         font-family: "Segoe Print";
         margin: 1rem 3rem;
+        @media (min-device-width:991px) and (max-device-width:1280px) and (max-width:991px) {
+            margin: 0;
+            font-size: 2.4vw;
+        }
 		}
 		&--title {
 			font-size: 2.5vw;
@@ -78,10 +83,20 @@ tr {
     &__cell {
         &--left {
             text-align: left;
+            @media (min-device-width:991px) and (max-device-width:1280px) and (max-width:991px) {
+				padding-right: 10vw;
+            }
+            
         }
         &--right {
             text-align: right;
             font-weight: bold;
         }
     }
+}
+
+.double-line {
+    height:10%;   
+    background: linear-gradient(to right, #000,#000, #000,map-get($colour-card, enchantee),map-get($colour-card, enchantee), map-get($colour-card, enchantee), map-get($colour-card, enchantee), #000, #000, #000) no-repeat center;
+    background-size:90vw 5px;
 }

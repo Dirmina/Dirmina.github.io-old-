@@ -1,6 +1,7 @@
 @import "../Utils/variables";
 @import "../Utils/mixins";
 @import "../Base/base";
+@import "../Components/animations";
 @import url('https://fonts.googleapis.com/css?family=Cookie&display=swap'); /*font-family: cookie (papilles/gout)*/
 
 .papilles {
@@ -46,6 +47,10 @@ tr {
 		font-size: 1.7vw;
         font-family: "Segoe Print";
         margin-bottom: 11rem;
+        @media (min-device-width:991px) and (max-device-width:1280px) and (max-width:991px) {
+            margin: 0;
+            font-size: 2.4vw;
+        }
 		}
 	}
 }
@@ -63,39 +68,51 @@ tr {
         &--left {
             text-align: left;
             padding-left: 5rem;
+            @media (min-device-width:991px) and (max-device-width:1280px) and (max-width:991px) {
+                padding-left: 1rem;
+                padding-right: 10vw;
+			}
         }
         &--right {
             text-align: right;
             font-weight: bold;
             padding-right: 5rem;
+            @media (min-device-width:991px) and (max-device-width:1280px) and (max-width:991px) {
+				padding-right: 1rem;
+			}
 
         }
     }
 }
 
 .double-line--first {
-    span {
-        &:before, &:after {
-            border-width: 25vw;
-            border-top: 5px solid map-get($colour-text-papilles, first);
-        }
-    }
+    height:10%;   
+    background: linear-gradient(to right, map-get($colour-text-papilles, first), map-get($colour-card, papilles), map-get($colour-card, papilles), map-get($colour-text-papilles, first)) no-repeat center;
+            background-size:90vw 5px;
 }
+
+
 
 .double-line--secund {
-    span {
-        &:before, &:after {
-            border-width: 25vw;
-            border-top: 5px solid map-get($colour-text-papilles, secund);
-        }
+    height:10%;   
+    background: linear-gradient(to right, map-get($colour-text-papilles, secund), map-get($colour-card, papilles), map-get($colour-card, papilles),map-get($colour-text-papilles, secund)) no-repeat center;
+            background-size:90vw 5px;
     }
-}
 
 .double-line--third {
-    span {
-        &:before, &:after {
-            border-width: 25vw;
-            border-top: 5px solid map-get($colour-text-papilles, third);
-        }
-    }
+    height:10%;   
+    background: linear-gradient(to right, map-get($colour-text-papilles, third), map-get($colour-card, papilles), map-get($colour-card, papilles), map-get($colour-text-papilles, third)) no-repeat center;
+            background-size:90vw 5px;
+}
+
+.anim-underline-first {
+    background: linear-gradient(to top, map-get($colour-text-papilles, first) 0%, map-get($colour-text-papilles, first) 10%, transparent 10.01%) no-repeat left bottom / 0 100%;
+}
+
+.anim-underline-secund {
+    background: linear-gradient(to top, map-get($colour-text-papilles, secund) 0%, map-get($colour-text-papilles, secund) 10%, transparent 10.01%) no-repeat left bottom / 0 100%;
+}
+
+.anim-underline-third {
+    background: linear-gradient(to top, map-get($colour-text-papilles, third) 0%, map-get($colour-text-papilles, third) 10%, transparent 10.01%) no-repeat left bottom / 0 100%;
 }

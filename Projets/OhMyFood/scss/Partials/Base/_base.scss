@@ -20,44 +20,36 @@ td {
 
 .header {
 	@include main-style;
-	text-align: center;
+    text-align: center;
+    @media (min-device-width:991px) and (max-device-width:1280px) {
+        font-size:3vw;
+    }
 }
 
 .footer {
-	@include main-style;
+    @include main-style;
+    position:fixed;
+    width: 100%;
+    bottom:0;
 	&__list {
 		padding-left: 20px;
 		padding-right: 20px;
 		display:flex;
 		justify-content: space-between;
 		list-style:none;
-		font-size: 4vw;
-	}
-}
-
-.double-line {
-    position: relative;
-    overflow: hidden;
-    
-    span {
-        display: inline-block;
-        vertical-align: baseline;
-        zoom: 1; 
-        *display: inline;
-        *vertical-align: auto;
-        position: relative;
-        padding: 0 5rem;
-
-        &:before, &:after {
-            content:" ";
-            display: block;
-            width: 4000px;
-            position: absolute;
-            top: 50%;
-            border-top: 2px solid black;
+        font-size: 4vw;
+        @media (min-device-width:991px) and (max-device-width:1280px) {
+            font-size: 2vw;
+            @media (max-width:991px) {
+                font-size: 3vw;
+            }
         }
-
-        &:before { right: 100%; }
-        &:after { left: 100%; }
+        a {
+            color: $colour-secondary;
+            animation: btn--shake 5s infinite;
+        }
+    }
+    @media (min-device-width:991px) and (max-device-width:1280px) {
+        padding: 0;
     }
 }

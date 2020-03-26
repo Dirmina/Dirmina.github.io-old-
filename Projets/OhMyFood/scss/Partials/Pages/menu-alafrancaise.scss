@@ -1,6 +1,7 @@
 @import "../Utils/variables";
 @import "../Utils/mixins";
 @import "../Base/base";
+@import "../Components/animations";
 @import url('https://fonts.googleapis.com/css?family=Croissant+One&display=swap'); /*font-family: 'Croissant One' (alafrancaise), Menu Cambria*/
 
 .alafrancaise {
@@ -47,7 +48,14 @@ tr {
 			font-size: 2.05vw;
             font-family: Cambria;
             margin-bottom: 15rem;
-		}	
+            @media (min-device-width:991px) and (max-device-width:1280px) and (max-width:991px) {
+                font-size: 2.5vw;
+                margin-bottom: 10rem;
+                @media (max-width:768px) {
+                    margin-bottom: 5rem;
+                }
+            }
+		}
 	}
 	&__color {
 		&--alafrancaise {
@@ -73,38 +81,47 @@ tr {
         &--left {
             text-align: left;
             padding-left: 5rem;
+            @media (min-device-width:991px) and (max-device-width:1280px) and (max-width:991px) {
+                padding-left: 1.3vw;
+                padding-right: 4rem;
+            }
         }
         &--right {
             text-align: right;
             font-weight: bold;
             padding-right: 5rem;
+            @media (min-device-width:991px) and (max-device-width:1280px) and (max-width:991px) {
+                padding-right: 1.3vw;
+            }
         }
     }
 }
 
 .double-line--first {
-    span {
-        &:before, &:after {
-            border-width: 25vw;
-            border-top: 3px solid map-get($colour-text-alafrancaise, first-title);
-        }
-    }
+    height:10%;   
+    background: linear-gradient(to right, map-get($colour-text-alafrancaise, first-title), map-get($colour-card, alafrancaise), map-get($colour-card, alafrancaise), map-get($colour-text-alafrancaise, first-title)) no-repeat center;
+    background-size:90vw 5px;
 }
 
 .double-line--secund {
-    span {
-        &:before, &:after {
-            border-width: 25vw;
-            border-top: 3px solid map-get($colour-text-alafrancaise, secund);
-        }
-    }
+    height:10%;   
+    background: linear-gradient(to right, map-get($colour-text-alafrancaise, secund), map-get($colour-card, alafrancaise), map-get($colour-card, alafrancaise), map-get($colour-text-alafrancaise, secund)) no-repeat center;
+    background-size:90vw 5px;
 }
 
 .double-line--third {
-    span {
-        &:before, &:after {
-            border-width: 25vw;
-            border-top: 3px solid map-get($colour-text-alafrancaise, third);
-        }
-    }
+    height:10%;   
+    background: linear-gradient(to right, map-get($colour-text-alafrancaise, third), map-get($colour-card, alafrancaise), map-get($colour-card, alafrancaise), map-get($colour-text-alafrancaise, third)) no-repeat center;
+    background-size:90vw 5px;
+}
+.anim-underline-first {
+    background: linear-gradient(to top, map-get($colour-text-alafrancaise, first-title) 0%, map-get($colour-text-alafrancaise, first-title) 10%, transparent 10.01%) no-repeat left bottom / 0 100%;
+}
+
+.anim-underline-secund {
+    background: linear-gradient(to top, map-get($colour-text-alafrancaise, secund) 0%, map-get($colour-text-alafrancaise, secund) 10%, transparent 10.01%) no-repeat left bottom / 0 100%;
+}
+
+.anim-underline-third {
+    background: linear-gradient(to top, map-get($colour-text-alafrancaise, third) 0%, map-get($colour-text-alafrancaise, third) 10%, transparent 10.01%) no-repeat left bottom / 0 100%;
 }

@@ -1,0 +1,97 @@
+@keyframes dot--animation {
+    0% {
+        transform: translateX(-10px) scale(0);
+        opacity: 0;
+    }
+     25% { 
+    
+        opacity: 1;
+    }
+    50% {
+        transform: translateX(10px) scale(1);
+    }
+    75% {
+        opacity: 1;
+    }
+    100% {
+        transform: translateX(30px) scale(0);
+        opacity: 0;
+    }
+}
+
+.dot--animation {
+    & > .btn__dot {
+      display: inline-block;
+      animation: dot--animation 2.5s infinite linear;
+      &:nth-child(1) {
+        animation-delay:0.6s;
+      }
+      &:nth-child(2) {
+        animation-delay:0.3s;
+      }
+      &:nth-child(3) {
+        animation-delay:0s;
+      }
+    }
+}
+
+.zoom__menu:hover {
+    transform: scale(1.2);
+    opacity:0.5;
+}
+.zoom__menu--papilles:hover {
+    transform: scale(1.10);
+    opacity:0.5; 
+}
+.zoom__menu--gout:hover {
+    transform: scale(1.10);
+    opacity:0.5; 
+}
+
+
+@keyframes btn--shake {
+    0% {
+        // entièrement à droite
+        transform: translateX($shake-intensity);
+    }
+    1% {
+        // entièrement à gauche
+        transform: translateX($shake-intensity * -1);
+    }
+    2% {
+        // entièrement à droite
+        transform: translateX($shake-intensity);
+    }
+    3% {
+        // entièrement à gauche
+        transform: translateX($shake-intensity * -1);
+    }
+    4% {
+        // entièrement à droite
+        transform: translateX($shake-intensity);
+    }
+    5% {
+        // entièrement à gauche
+        transform: translateX($shake-intensity * -1);
+    }
+    6% {
+        // entièrement à droite
+        transform: translateX($shake-intensity);
+    }
+    7% {
+        // entièrement à gauche
+        transform: translateX($shake-intensity * -1);
+    }
+    7%, 100% {
+        transform: translateX(0);
+    }
+}
+
+.anim-underline{
+    text-decoration: none;
+    background: linear-gradient(to top, #000 0%, #000 10%, transparent 10.01%) no-repeat left bottom / 0 100%;
+    transition: background-size 0.3s;
+    &:hover {
+        background-size: 100% 100%;
+    }
+}

@@ -5,10 +5,10 @@
   "main": "index.js",
   "scripts": {
     "sass": "sass --watch ./scss/main.scss:./css/style.css",
-    "sass_2": "sass --watch ./scss/Partials/Pages/menu-enchantee.scss:./css/style-menu-enchantee.css",
-    "sass_3": "sass --watch ./scss/Partials/Pages/menu-alafrancaise.scss:./css/style-menu-alafrancaise.css",
-    "sass_4": "sass --watch ./scss/Partials/Pages/menu-papilles.scss:./css/style-menu-papilles.css",
-    "sass_5": "sass --watch ./scss/Partials/Pages/menu-gout.scss:./css/style-menu-gout.css",
+    "enchantee": "sass --watch ./scss/Partials/Pages/menu-enchantee.scss:./css/style-menu-enchantee.css",
+    "alafrancaise": "sass --watch ./scss/Partials/Pages/menu-alafrancaise.scss:./css/style-menu-alafrancaise.css",
+    "papilles": "sass --watch ./scss/Partials/Pages/menu-papilles.scss:./css/style-menu-papilles.css",
+    "gout": "sass --watch ./scss/Partials/Pages/menu-gout.scss:./css/style-menu-gout.css",
     "prefix": "postcss ./style.css use --autoprefixer -d ./css/prefixed/"
   },
   "author": "",

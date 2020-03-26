@@ -1,0 +1,19 @@
+@media (max-device-width: 767.98px),
+(min-device-width:768px) and (max-device-width: 991.98px),
+(min-device-width: 991px) and (max-width: 991px) {
+    .menus__card {
+        width : 90%;
+        height : 350px;
+    }
+}
+
+
+@media (max-device-width: 767.98px) { /*phone*/
+
+}
+
+@media (min-device-width:768px) and (max-device-width: 991.98px) { /*tablet*/
+
+}
+
+@media(min-device-width: 991px) and (max-device-width: 1280px) { /*PC medium screen*/}
