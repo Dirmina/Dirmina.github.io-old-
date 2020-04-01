@@ -98,7 +98,7 @@
 body {
   margin: 0;
   font-family: arial, sans-serif;
-  font-size: 2vw;
+  font-size: 3vw;
 }
 
 h1 {
@@ -153,7 +153,7 @@ td {
   display: flex;
   justify-content: space-between;
   list-style: none;
-  font-size: 2vw;
+  font-size: 3vw;
 }
 @media (min-device-width: 991px) and (max-device-width: 1280px) {
   .footer__list {
@@ -224,7 +224,7 @@ td {
   }
 }
 .menus__card {
-  width: 40%;
+  width: 45%;
   height: 750px;
   margin: 1rem;
   padding: 1vw;
@@ -270,10 +270,10 @@ td {
 }
 .font__title--enchantee {
   font-family: "Devonshire";
-  font-size: 3vw;
+  font-size: 5vw;
 }
 .font__title--alafrancaise {
-  font-size: 2vw;
+  font-size: 3.5vw;
   font-family: "Croissant One";
   background: -webkit-linear-gradient(-80deg, #e38a12 0%, #a56799 50%, #8f5aff 100%);
   -webkit-background-clip: text;
@@ -287,7 +287,7 @@ td {
 .font__title--papilles {
   font-family: "cookie";
   font-weight: normal;
-  font-size: 3vw;
+  font-size: 5vw;
   background: -webkit-linear-gradient(-80deg, #0228dd 0%, #0670f3 50%, #229df9 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -300,7 +300,7 @@ td {
 .font__title--gout {
   font-family: "kaushan script";
   font-weight: normal;
-  font-size: 2.5vw;
+  font-size: 4.5vw;
   background: -webkit-linear-gradient(-80deg, #41963c 0%, #80cb5e 50%, #beff7f 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -311,7 +311,7 @@ td {
   }
 }
 .font__subtitle {
-  font-size: 2vw;
+  font-size: 3.5vw;
 }
 .font__subtitle--enchantee {
   font-family: "Segoe Print";
