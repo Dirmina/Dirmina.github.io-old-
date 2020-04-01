@@ -222,7 +222,7 @@ td {
 /*font-family: cookie (papilles)*/
 /*font-family: Kaushan script (gout) */
 .menus {
-  padding: 2.6vw 3.9vw 2.6vw 3.9vw;
+  padding: 2.6vw 3.9vw;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -231,7 +231,8 @@ td {
 }
 @media (orientation: landscape) {
   .menus {
-    margin-bottom: 12vw;
+    padding: 1.3vw 1.8vw;
+    margin-bottom: 8vw;
   }
 }
 @media (min-device-width: 1200px) and (orientation: landscape) {
