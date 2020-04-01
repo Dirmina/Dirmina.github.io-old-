@@ -1,7 +1,10 @@
 body {
 	margin: 0;
 	font-family: arial, sans-serif;
-	font-size: 4vw;
+	font-size: 2vw;
+}
+h1 {
+    margin: 0.5rem;
 }
 a { 
 	display:block;
@@ -13,6 +16,8 @@ img {
 	display:inline-block;
 	max-width: 15%;
     max-height: auto;
+    padding-bottom:0;
+    margin-bottom:0;
 }
 
 th { 
@@ -26,9 +31,6 @@ td {
 .header {
 	@include main-style;
     text-align: center;
-    @media (min-device-width:991px) and (max-device-width:1280px) {
-        font-size:3vw;
-    }
 }
 
 .footer {
@@ -38,11 +40,12 @@ td {
     bottom:0;
 	&__list {
 		padding-left: 20px;
-		padding-right: 20px;
+        padding-right: 20px;
+        margin:0.5rem;
 		display:flex;
 		justify-content: space-between;
 		list-style:none;
-        font-size: 4vw;
+        font-size: 2vw;
         @media (min-device-width:991px) and (max-device-width:1280px) {
             font-size: 2vw;
             @media (max-width:991px) {
@@ -53,8 +56,32 @@ td {
             color: $colour-secondary;
             animation: btn--shake 5s infinite;
         }
-    }
-    @media (min-device-width:991px) and (max-device-width:1280px) {
-        padding: 0;
-    }
+	}
+ padding: 0;
+}
+
+.btn {
+    &--footer {
+		padding: 0.8vw;
+		border-radius: 15px;
+		position:relative;
+		& .btn__bg {
+			padding: 1vw;
+			border-radius: 15px;
+			position: absolute;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			background-color: darken($colour-primary, 7);
+			opacity: 0;
+			z-index: -1;
+			transition: opacity 0.4s;
+		}
+	}
+	&--footer:hover {
+		& .btn__bg {
+			opacity: 1;
+		}
+	}
 }

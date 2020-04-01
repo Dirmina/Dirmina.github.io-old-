@@ -18,7 +18,7 @@
         padding: 3.9vw;
         padding-bottom: 6vw;
         text-align: center;
-        box-shadow: 0 0 1rem #ededed;
+        box-shadow: 0 0 1rem #dad8d8;
         display:flex;
         flex-direction: column;
         justify-content: center;
@@ -26,6 +26,7 @@
 }
 .font {
     font-weight: normal;
+    font-family: "arial black";
     &__title {   
         &--gout {
             font-family: 'kaushan script';

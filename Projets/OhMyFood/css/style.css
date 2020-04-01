@@ -37,7 +37,12 @@
   animation-delay: 0s;
 }
 
-.zoom__menu:hover {
+.zoom__menu--enchantee:hover {
+  transform: scale(1.1);
+  opacity: 0.5;
+}
+
+.zoom__menu--alafrancaise:hover {
   transform: scale(1.2);
   opacity: 0.5;
 }
@@ -93,7 +98,11 @@
 body {
   margin: 0;
   font-family: arial, sans-serif;
-  font-size: 4vw;
+  font-size: 2vw;
+}
+
+h1 {
+  margin: 0.5rem;
 }
 
 a {
@@ -106,6 +115,8 @@ img {
   display: inline-block;
   max-width: 15%;
   max-height: auto;
+  padding-bottom: 0;
+  margin-bottom: 0;
 }
 
 th {
@@ -118,34 +129,31 @@ td {
 }
 
 .header {
-  background: #579c87;
+  background: #299ec2;
   color: #fdcb46;
-  padding-top: 0.3rem;
-  padding-bottom: 0.3rem;
+  padding-top: 0.1vw;
+  padding-bottom: 0.1vw;
   text-align: center;
-}
-@media (min-device-width: 991px) and (max-device-width: 1280px) {
-  .header {
-    font-size: 3vw;
-  }
 }
 
 .footer {
-  background: #579c87;
+  background: #299ec2;
   color: #fdcb46;
-  padding-top: 0.3rem;
-  padding-bottom: 0.3rem;
+  padding-top: 0.1vw;
+  padding-bottom: 0.1vw;
   position: fixed;
   width: 100%;
   bottom: 0;
+  padding: 0;
 }
 .footer__list {
   padding-left: 20px;
   padding-right: 20px;
+  margin: 0.5rem;
   display: flex;
   justify-content: space-between;
   list-style: none;
-  font-size: 4vw;
+  font-size: 2vw;
 }
 @media (min-device-width: 991px) and (max-device-width: 1280px) {
   .footer__list {
@@ -161,10 +169,27 @@ td {
   color: #fdcb46;
   animation: btn--shake 5s infinite;
 }
-@media (min-device-width: 991px) and (max-device-width: 1280px) {
-  .footer {
-    padding: 0;
-  }
+
+.btn--footer {
+  padding: 0.8vw;
+  border-radius: 15px;
+  position: relative;
+}
+.btn--footer .btn__bg {
+  padding: 1vw;
+  border-radius: 15px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #2386a5;
+  opacity: 0;
+  z-index: -1;
+  transition: opacity 0.4s;
+}
+.btn--footer:hover .btn__bg {
+  opacity: 1;
 }
 
 @media (max-device-width: 767.98px), (min-device-width: 768px) and (max-device-width: 991.98px), (min-device-width: 991px) and (max-width: 991px) {
@@ -192,27 +217,36 @@ td {
   justify-content: center;
   flex-wrap: wrap;
   font-size: 3.5vw;
-  padding-bottom: 15vw;
+}
+@media (min-device-width: 1200px) and (orientation: landscape) {
+  .menus {
+    margin-bottom: 8vw;
+  }
 }
 .menus__card {
-  width: 45%;
+  width: 40%;
   height: 750px;
   margin: 1rem;
+  padding: 1vw;
   text-align: center;
-  box-shadow: 0 0 1rem #ededed;
+  box-shadow: 0 0 1rem #dad8d8;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  /*@media (min-device-width: 991px) and (max-width: 991px) {
+  	width : 90%;
+  	height : 350px;
+  }*/
 }
-@media (min-device-width: 991px) and (max-width: 991px) {
+@media (min-device-width: 992px) and (orientation: landscape) {
   .menus__card {
-    width: 90%;
-    height: 350px;
+    width: 20%;
+    height: 25vw;
   }
 }
-@media (min-device-width: 991px) and (max-device-width: 1280px) {
+@media (min-device-width: 1280px) and (orientation: portrait) {
   .menus__card {
-    height: 500px;
+    height: 60%;
   }
 }
 .menus__card--orange {
@@ -236,9 +270,10 @@ td {
 }
 .font__title--enchantee {
   font-family: "Devonshire";
+  font-size: 3vw;
 }
 .font__title--alafrancaise {
-  font-size: 3vw;
+  font-size: 2vw;
   font-family: "Croissant One";
   background: -webkit-linear-gradient(-80deg, #e38a12 0%, #a56799 50%, #8f5aff 100%);
   -webkit-background-clip: text;
@@ -246,34 +281,37 @@ td {
 }
 @media (min-device-width: 991px) and (max-device-width: 1280px) and (max-width: 991px) {
   .font__title--alafrancaise {
-    font-size: 4vw;
+    font-size: 2vw;
   }
 }
 .font__title--papilles {
   font-family: "cookie";
   font-weight: normal;
-  font-size: 6vw;
+  font-size: 3vw;
   background: -webkit-linear-gradient(-80deg, #0228dd 0%, #0670f3 50%, #229df9 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 @media (min-device-width: 991px) and (max-device-width: 1280px) and (max-width: 991px) {
   .font__title--papilles {
-    font-size: 8vw;
+    font-size: 4.5vw;
   }
 }
 .font__title--gout {
   font-family: "kaushan script";
   font-weight: normal;
-  font-size: 5vw;
+  font-size: 2.5vw;
   background: -webkit-linear-gradient(-80deg, #41963c 0%, #80cb5e 50%, #beff7f 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 @media (min-device-width: 991px) and (max-device-width: 1280px) and (max-width: 991px) {
   .font__title--gout {
-    font-size: 7vw;
+    font-size: 4.5vw;
   }
+}
+.font__subtitle {
+  font-size: 2vw;
 }
 .font__subtitle--enchantee {
   font-family: "Segoe Print";
@@ -294,39 +332,42 @@ td {
   color: #41963c;
 }
 
-.zoom__menu {
-  transition: all 1s;
-}
-.zoom__menu--papilles, .zoom__menu--gout {
+.zoom__menu--enchantee, .zoom__menu--alafrancaise, .zoom__menu--papilles, .zoom__menu--gout {
   transition: all 1s;
 }
 
 .btn--soon {
   width: 45%;
-  background: #579c87;
+  background: #299ec2;
   color: #fdcb46;
-  padding-top: 0.3rem;
-  padding-bottom: 0.3rem;
+  padding-top: 0.1vw;
+  padding-bottom: 0.1vw;
   border-radius: 15px;
   font-size: 4vw;
   padding: 0.8rem;
-  margin: 2rem;
+  margin: 2.6vw;
   border: none;
 }
-@media (min-device-width: 991px) and (max-device-width: 1280px) {
+@media (min-device-width: 992px) and (orientation: landscape) {
+  .btn--soon {
+    width: 25%;
+    font-size: 2vw;
+  }
+}
+@media (min-device-width: 991px) and (max-device-width: 1200px) {
   .btn--soon {
     width: 25%;
     font-size: 2vw;
     margin: 1rem;
   }
 }
-@media (min-device-width: 991px) and (max-device-width: 1280px) and (max-width: 991px) {
+@media (min-device-width: 991px) and (max-device-width: 1200px) and (max-width: 991px) {
   .btn--soon {
     font-size: 3vw;
     width: 35%;
   }
 }
-@media (min-device-width: 991px) and (max-device-width: 1280px) and (max-width: 768px) {
+@media (min-device-width: 991px) and (max-device-width: 1200px) and (max-width: 768px) {
   .btn--soon {
     font-size: 3vw;
     width: 40%;
@@ -339,6 +380,12 @@ td {
   border-radius: 50%;
   display: inline-block;
   margin: 10px;
+}
+@media (min-device-width: 992px) and (orientation: landscape) {
+  .btn__dot {
+    height: 20px;
+    width: 20px;
+  }
 }
 @media (min-device-width: 991px) and (max-device-width: 1280px) {
   .btn__dot {

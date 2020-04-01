@@ -4,7 +4,11 @@
 body {
   margin: 0;
   font-family: arial, sans-serif;
-  font-size: 4vw;
+  font-size: 2vw;
+}
+
+h1 {
+  margin: 0.5rem;
 }
 
 a {
@@ -17,6 +21,8 @@ img {
   display: inline-block;
   max-width: 15%;
   max-height: auto;
+  padding-bottom: 0;
+  margin-bottom: 0;
 }
 
 th {
@@ -29,34 +35,31 @@ td {
 }
 
 .header {
-  background: #579c87;
+  background: #299ec2;
   color: #fdcb46;
-  padding-top: 0.3rem;
-  padding-bottom: 0.3rem;
+  padding-top: 0.1vw;
+  padding-bottom: 0.1vw;
   text-align: center;
-}
-@media (min-device-width: 991px) and (max-device-width: 1280px) {
-  .header {
-    font-size: 3vw;
-  }
 }
 
 .footer {
-  background: #579c87;
+  background: #299ec2;
   color: #fdcb46;
-  padding-top: 0.3rem;
-  padding-bottom: 0.3rem;
+  padding-top: 0.1vw;
+  padding-bottom: 0.1vw;
   position: fixed;
   width: 100%;
   bottom: 0;
+  padding: 0;
 }
 .footer__list {
   padding-left: 20px;
   padding-right: 20px;
+  margin: 0.5rem;
   display: flex;
   justify-content: space-between;
   list-style: none;
-  font-size: 4vw;
+  font-size: 2vw;
 }
 @media (min-device-width: 991px) and (max-device-width: 1280px) {
   .footer__list {
@@ -72,10 +75,27 @@ td {
   color: #fdcb46;
   animation: btn--shake 5s infinite;
 }
-@media (min-device-width: 991px) and (max-device-width: 1280px) {
-  .footer {
-    padding: 0;
-  }
+
+.btn--footer {
+  padding: 0.8vw;
+  border-radius: 15px;
+  position: relative;
+}
+.btn--footer .btn__bg {
+  padding: 1vw;
+  border-radius: 15px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #2386a5;
+  opacity: 0;
+  z-index: -1;
+  transition: opacity 0.4s;
+}
+.btn--footer:hover .btn__bg {
+  opacity: 1;
 }
 
 @keyframes dot--animation {
@@ -111,7 +131,12 @@ td {
   animation-delay: 0s;
 }
 
-.zoom__menu:hover {
+.zoom__menu--enchantee:hover {
+  transform: scale(1.1);
+  opacity: 0.5;
+}
+
+.zoom__menu--alafrancaise:hover {
   transform: scale(1.2);
   opacity: 0.5;
 }
@@ -189,7 +214,7 @@ td {
   margin: 0;
   padding: 3.9vw;
   text-align: center;
-  box-shadow: 0 0 1rem #ededed;
+  box-shadow: 0 0 1rem #dad8d8;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -197,6 +222,7 @@ td {
 
 .font {
   font-weight: normal;
+  font-family: "arial black";
 }
 .font__title--alafrancaise {
   font-size: 3vw;

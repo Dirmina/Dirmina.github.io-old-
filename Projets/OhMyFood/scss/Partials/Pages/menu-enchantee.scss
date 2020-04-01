@@ -8,7 +8,7 @@ img {
 	display:inline-block;
 	max-width: 9%;
     max-height: auto;
-    vertical-align: text-top;
+    vertical-align: middle;
 }
 
 .img {
@@ -32,7 +32,7 @@ h2 > span { vertical-align: middle;}
         padding: 3.9vw;
         padding-bottom: 6vw;
         text-align: center;
-        box-shadow: 0 0 1rem #ededed;
+        box-shadow: 0 0 1rem #dad8d8;
         display:flex;
         flex-direction: column;
         justify-content: center;
@@ -41,9 +41,11 @@ h2 > span { vertical-align: middle;}
 
     .font {
         font-weight: normal;
+        font-family: "arial black";
         &__title{
             &--enchantee {
             font-family: 'Devonshire';
+            font-size: 4vw;
             margin: 0;
                 &-last {
                     display: block;
@@ -69,7 +71,7 @@ tr {
         }
 		}
 		&--title {
-			font-size: 2.5vw;
+			font-size: 2.8vw;
 			font-weight:bold;
 		}
     }
