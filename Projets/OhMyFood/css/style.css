@@ -100,9 +100,14 @@ body {
   font-family: arial, sans-serif;
   font-size: 3vw;
 }
+@media (orientation: landscape) {
+  body {
+    font-size: 2vw;
+  }
+}
 
 h1 {
-  margin: 0.5rem;
+  margin: 0.75vw;
 }
 
 a {
@@ -154,6 +159,11 @@ td {
   justify-content: space-between;
   list-style: none;
   font-size: 4vw;
+}
+@media (orientation: landscape) {
+  .footer__list {
+    font-size: 2vw;
+  }
 }
 @media (min-device-width: 991px) and (max-device-width: 1280px) {
   .footer__list {
@@ -219,6 +229,11 @@ td {
   font-size: 3.5vw;
   margin-bottom: 15vw;
 }
+@media (orientation: landscape) {
+  .menus {
+    margin-bottom: 12vw;
+  }
+}
 @media (min-device-width: 1200px) and (orientation: landscape) {
   .menus {
     margin-bottom: 8vw;
@@ -238,6 +253,14 @@ td {
   	width : 90%;
   	height : 350px;
   }*/
+}
+@media (orientation: landscape) {
+  .menus__card {
+    width: 25%;
+    height: 20vw;
+    margin: 3.9vw;
+    padding: 5.2vw;
+  }
 }
 @media (min-device-width: 992px) and (orientation: landscape) {
   .menus__card {
@@ -349,6 +372,12 @@ td {
   margin: 2.6vw;
   border: none;
 }
+@media (orientation: landscape) {
+  .btn--soon {
+    width: 25%;
+    font-size: 2vw;
+  }
+}
 @media (min-device-width: 992px) and (orientation: landscape) {
   .btn--soon {
     width: 25%;
@@ -381,6 +410,12 @@ td {
   border-radius: 50%;
   display: inline-block;
   margin: 10px;
+}
+@media (orientation: landscape) {
+  .btn__dot {
+    height: 20px;
+    width: 20px;
+  }
 }
 @media (min-device-width: 992px) and (orientation: landscape) {
   .btn__dot {
