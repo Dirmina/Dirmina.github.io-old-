@@ -286,14 +286,26 @@ td {
 }
 .font__title--enchantee {
   font-family: "Devonshire";
-  font-size: 5vw;
+  font-size: 3vw;
+}
+@media (orientation: landscape) and (min-device-width: 992px) {
+  .font__title--enchantee {
+    font-size: 3vw;
+    height: 50%;
+  }
 }
 .font__title--alafrancaise {
-  font-size: 3.5vw;
+  font-size: 2vw;
   font-family: "Croissant One";
   background: -webkit-linear-gradient(-80deg, #e38a12 0%, #a56799 50%, #8f5aff 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+@media (orientation: landscape) and (min-device-width: 992px) {
+  .font__title--alafrancaise {
+    font-size: 2vw;
+    height: 50%;
+  }
 }
 @media (min-device-width: 991px) and (max-device-width: 1280px) and (max-width: 991px) {
   .font__title--alafrancaise {
@@ -303,10 +315,16 @@ td {
 .font__title--papilles {
   font-family: "cookie";
   font-weight: normal;
-  font-size: 5vw;
+  font-size: 3.5vw;
   background: -webkit-linear-gradient(-80deg, #0228dd 0%, #0670f3 50%, #229df9 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+@media (orientation: landscape) and (min-device-width: 992px) {
+  .font__title--papilles {
+    font-size: 3.5vw;
+    height: 50%;
+  }
 }
 @media (min-device-width: 991px) and (max-device-width: 1280px) and (max-width: 991px) {
   .font__title--papilles {
@@ -316,10 +334,16 @@ td {
 .font__title--gout {
   font-family: "kaushan script";
   font-weight: normal;
-  font-size: 4.5vw;
+  font-size: 3.5vw;
   background: -webkit-linear-gradient(-80deg, #41963c 0%, #80cb5e 50%, #beff7f 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+@media (orientation: landscape) and (min-device-width: 992px) {
+  .font__title--gout {
+    font-size: 3.5vw;
+    height: 50%;
+  }
 }
 @media (min-device-width: 991px) and (max-device-width: 1280px) and (max-width: 991px) {
   .font__title--gout {
@@ -333,6 +357,11 @@ td {
   font-family: "Segoe Print";
   font-weight: bold;
   margin-top: 1.3vw;
+}
+@media (orientation: landscape) and (min-device-width: 992px) {
+  .font__subtitle--enchantee {
+    margin-top: 0;
+  }
 }
 .font__subtitle--alafrancaise {
   font-family: "Cambria";
