@@ -227,17 +227,10 @@ td {
   justify-content: center;
   flex-wrap: wrap;
   font-size: 3.5vw;
-  margin-bottom: 15vw;
 }
 @media (orientation: landscape) {
   .menus {
     padding: 1.3vw 1.8vw;
-    margin-bottom: 8vw;
-  }
-}
-@media (min-device-width: 1200px) and (orientation: landscape) {
-  .menus {
-    margin-bottom: 8vw;
   }
 }
 .menus__card {
@@ -360,6 +353,20 @@ td {
   transition: all 1s;
 }
 
+.btn {
+  text-align: center;
+  margin-bottom: 15vw;
+}
+@media (orientation: landscape) {
+  .btn {
+    margin-bottom: 8vw;
+  }
+}
+@media (min-device-width: 1200px) and (orientation: landscape) {
+  .btn {
+    margin-bottom: 8vw;
+  }
+}
 .btn--soon {
   width: 45%;
   background: #299ec2;
