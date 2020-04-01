@@ -217,6 +217,7 @@ td {
   justify-content: center;
   flex-wrap: wrap;
   font-size: 3.5vw;
+  margin-bottom: 15vw;
 }
 @media (min-device-width: 1200px) and (orientation: landscape) {
   .menus {
