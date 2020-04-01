@@ -246,6 +246,11 @@ td {
     padding: 1.3vw;
   }
 }
+@media (orientation: landscape) and (min-device-width: 768px) and (max-device-width: 992px) {
+  .menus__card {
+    height: 50vh;
+  }
+}
 @media (orientation: landscape) and (min-device-width: 992px) {
   .menus__card {
     height: 25vw;
