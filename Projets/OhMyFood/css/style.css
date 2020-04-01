@@ -170,14 +170,9 @@ td {
     font-size: 2vw;
   }
 }
-@media (min-device-width: 991px) and (max-device-width: 1280px) {
+@media (orientation: landscape) and (min-device-width: 992px) and (max-width: 768px) {
   .footer__list {
-    font-size: 2vw;
-  }
-}
-@media (min-device-width: 991px) and (max-device-width: 1280px) and (max-width: 991px) {
-  .footer__list {
-    font-size: 3vw;
+    font-size: 2.3vw;
   }
 }
 .footer__list a {
@@ -207,21 +202,6 @@ td {
   opacity: 1;
 }
 
-@media (max-device-width: 767.98px), (min-device-width: 768px) and (max-device-width: 991.98px), (min-device-width: 991px) and (max-width: 991px) {
-  .menus__card {
-    width: 90%;
-    height: 350px;
-  }
-}
-@media (max-device-width: 767.98px) {
-  /*phone*/
-}
-@media (min-device-width: 768px) and (max-device-width: 991.98px) {
-  /*tablet*/
-}
-@media (min-device-width: 991px) and (max-device-width: 1280px) {
-  /*PC medium screen*/
-}
 /*font-family: devonshire (enchantee), menu segoe print*/
 /*font-family: 'Croissant One' (alafrancaise), Menu Cambria*/
 /*font-family: cookie (papilles)*/
@@ -232,6 +212,11 @@ td {
   justify-content: center;
   flex-wrap: wrap;
   font-size: 3.5vw;
+}
+@media (min-device-width: 992px), (orientation: portrait) and (max-device-width: 992px) {
+  .menus {
+    padding: 0;
+  }
 }
 @media (orientation: landscape) {
   .menus {
@@ -248,10 +233,11 @@ td {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /*@media (min-device-width: 991px) and (max-width: 991px) {
-  	width : 90%;
-  	height : 350px;
-  }*/
+}
+@media (orientation: portrait) and (max-device-width: 992px) and (max-width: 768px) {
+  .menus__card {
+    height: 50vh;
+  }
 }
 @media (orientation: landscape) {
   .menus__card {
@@ -265,9 +251,18 @@ td {
     height: 25vw;
   }
 }
-@media (min-device-width: 1280px) and (orientation: portrait) {
+@media (orientation: landscape) and (min-device-width: 992px) and (max-width: 992px) {
   .menus__card {
-    height: 60%;
+    width: 20%;
+    padding: 0;
+    height: 60vh;
+  }
+}
+@media (orientation: landscape) and (min-device-width: 992px) and (max-width: 768px) {
+  .menus__card {
+    padding: 0;
+    width: 40%;
+    height: 40vh;
   }
 }
 .menus__card--orange {
@@ -322,11 +317,6 @@ td {
     font-size: 2vw;
   }
 }
-@media (min-device-width: 991px) and (max-device-width: 1280px) and (max-width: 991px) {
-  .font__title--alafrancaise {
-    font-size: 2vw;
-  }
-}
 .font__title--papilles {
   font-family: "cookie";
   font-weight: normal;
@@ -338,11 +328,6 @@ td {
 @media (orientation: landscape) {
   .font__title--papilles {
     font-size: 3.5vw;
-  }
-}
-@media (min-device-width: 991px) and (max-device-width: 1280px) and (max-width: 991px) {
-  .font__title--papilles {
-    font-size: 4.5vw;
   }
 }
 .font__title--gout {
@@ -358,9 +343,9 @@ td {
     font-size: 3.5vw;
   }
 }
-@media (min-device-width: 991px) and (max-device-width: 1280px) and (max-width: 991px) {
+@media (orientation: landscape) and (min-device-width: 992px) and (max-width: 992px) {
   .font__title--gout {
-    font-size: 4.5vw;
+    font-size: 3vw;
   }
 }
 .font__subtitle {
@@ -415,11 +400,6 @@ td {
     margin-bottom: 8vw;
   }
 }
-@media (min-device-width: 1200px) and (orientation: landscape) {
-  .btn {
-    margin-bottom: 8vw;
-  }
-}
 .btn--soon {
   width: 45%;
   background: #299ec2;
@@ -445,23 +425,11 @@ td {
     padding: 0.5vw;
   }
 }
-@media (min-device-width: 991px) and (max-device-width: 1200px) {
+@media (orientation: landscape) and (min-device-width: 992px) and (max-width: 768px) {
   .btn--soon {
     width: 25%;
-    font-size: 2vw;
-    margin: 1.3vw;
-  }
-}
-@media (min-device-width: 991px) and (max-device-width: 1200px) and (max-width: 991px) {
-  .btn--soon {
     font-size: 3vw;
-    width: 35%;
-  }
-}
-@media (min-device-width: 991px) and (max-device-width: 1200px) and (max-width: 768px) {
-  .btn--soon {
-    font-size: 3vw;
-    width: 40%;
+    padding: 0.8vw;
   }
 }
 .btn__dot {
@@ -472,13 +440,19 @@ td {
   display: inline-block;
   margin: 10px;
 }
+@media (max-width: 768px) {
+  .btn__dot {
+    height: 10px;
+    width: 10px;
+  }
+}
 @media (orientation: landscape) {
   .btn__dot {
     height: 10px;
     width: 10px;
   }
 }
-@media (min-device-width: 991px) and (max-device-width: 1280px) and (max-width: 991px) {
+@media (orientation: landscape) and (min-device-width: 992px) and (max-width: 768px) {
   .btn__dot {
     height: 7px;
     width: 7px;
