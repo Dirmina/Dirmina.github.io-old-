@@ -118,7 +118,7 @@ a {
 
 img {
   display: inline-block;
-  max-width: 15%;
+  max-width: 25%;
   max-height: auto;
   padding-bottom: 0;
   margin-bottom: 0;
@@ -304,6 +304,12 @@ td {
     line-height: 2.6vw;
   }
 }
+@media (orientation: landscape) and (min-device-width: 992px) {
+  .font__title--enchantee {
+    height: auto;
+    padding-bottom: 3vw;
+  }
+}
 .font__title--alafrancaise {
   font-size: 3.5vw;
   font-family: "Croissant One";
@@ -377,7 +383,8 @@ td {
 }
 @media (orientation: landscape) and (min-device-width: 992px) {
   .font__subtitle--enchantee {
-    margin-top: 0;
+    padding-top: 5.2vw 0;
+    line-height: 2.6vw;
   }
 }
 .font__subtitle--alafrancaise {
@@ -434,7 +441,8 @@ td {
 @media (orientation: landscape) and (min-device-width: 992px) {
   .btn--soon {
     width: 20%;
-    font-size: 2vw;
+    font-size: 1.8vw;
+    padding: 0.5vw;
   }
 }
 @media (min-device-width: 991px) and (max-device-width: 1200px) {
@@ -468,12 +476,6 @@ td {
   .btn__dot {
     height: 10px;
     width: 10px;
-  }
-}
-@media (orientation: landscape) and (min-device-width: 992px) {
-  .btn__dot {
-    height: 15px;
-    width: 15px;
   }
 }
 @media (min-device-width: 991px) and (max-device-width: 1280px) and (max-width: 991px) {
