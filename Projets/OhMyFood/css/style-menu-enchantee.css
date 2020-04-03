@@ -228,7 +228,6 @@ h2 > span {
   justify-content: center;
   text-align: center;
   height: 750px;
-  margin: 0;
 }
 .enchantee > .menus__card {
   width: 100%;
@@ -236,13 +235,13 @@ h2 > span {
 }
 
 .menus {
-  padding: 6.5vw;
+  padding: 0 12vw;
   /*vw for responsive padding*/
   text-align: center;
 }
 @media (orientation: landscape) and (min-width: 992px) {
   .menus {
-    padding: 3vw 12vw;
+    padding: 0 12vw;
   }
 }
 .menus__card {
@@ -252,10 +251,16 @@ h2 > span {
   padding: 3.9vw;
   padding-bottom: 6vw;
   text-align: center;
-  box-shadow: 0 0 1rem #dad8d8;
+  box-shadow: 0 0 1.3vw #dad8d8;
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+@media (orientation: landscape) and (min-width: 992px) {
+  .menus__card {
+    padding: 1.3vw;
+    padding-bottom: 2.5vw;
+  }
 }
 
 .font {
@@ -278,13 +283,13 @@ h2 > span {
 }
 
 tr {
-  height: 3rem;
+  height: 3.9vw;
 }
 
 .font__table--enchantee {
   font-size: 1.7vw;
   font-family: "Segoe Print";
-  margin: 1rem 3rem;
+  margin: 1.3vw 3.9vw;
 }
 @media (max-width: 768px) {
   .font__table--enchantee {
@@ -323,7 +328,7 @@ tr {
 }
 
 .table__part {
-  height: 10rem;
+  height: 13vw;
   vertical-align: bottom;
 }
 .table__cell--left {
