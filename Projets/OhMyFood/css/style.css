@@ -35,22 +35,22 @@
   animation-delay: 0s;
 }
 
-.zoom__menu--enchantee:hover {
+.zoom__menu--enchantee:hover, .zoom__menu--enchantee:active {
   transform: scale(1.1);
   opacity: 0.5;
 }
 
-.zoom__menu--alafrancaise:hover {
+.zoom__menu--alafrancaise:hover, .zoom__menu--alafrancaise:active {
   transform: scale(1.2);
   opacity: 0.5;
 }
 
-.zoom__menu--papilles:hover {
+.zoom__menu--papilles:hover, .zoom__menu--papilles:active {
   transform: scale(1.1);
   opacity: 0.5;
 }
 
-.zoom__menu--gout:hover {
+.zoom__menu--gout:hover, .zoom__menu--gout:active {
   transform: scale(1.1);
   opacity: 0.5;
 }
@@ -123,6 +123,11 @@ img {
 @media (orientation: landscape) {
   img {
     max-width: 20%;
+  }
+}
+@media (orientation: landscape) and (max-width: 768px) {
+  img {
+    max-width: 15%;
   }
 }
 
@@ -256,7 +261,7 @@ td {
     height: 50vh;
   }
 }
-@media (orientation: landscape) and (max-width: 992px) {
+@media (orientation: landscape) and (min-width: 992px) {
   .menus__card {
     width: 20%;
     padding: 0;
@@ -287,12 +292,22 @@ td {
 }
 @media (orientation: landscape) {
   .pos-rel {
+    bottom: 18%;
+  }
+}
+@media (orientation: landscape) and (min-width: 501px) and (max-width: 768px) {
+  .pos-rel {
+    bottom: 18%;
+  }
+}
+@media (orientation: landscape) and (min-width: 768px) and (max-width: 992px) {
+  .pos-rel {
     bottom: 12%;
   }
 }
-@media (orientation: landscape) and (min-width: 992px) and (max-width: 1200px) {
-  .pos-rel {
-    bottom: 7%;
+@media (orientation: landscape) and (min-width: 501px) and (max-width: 768px) {
+  .pos-rel__subtitle {
+    bottom: 25%;
   }
 }
 
@@ -431,6 +446,11 @@ td {
     font-size: 3vw;
   }
 }
+@media (min-width: 501px) and (max-width: 768px) {
+  .btn--soon > h2 {
+    font-size: 2.5vw;
+  }
+}
 @media (min-width: 992px) {
   .btn--soon > h2 {
     font-size: 1.8vw;
@@ -444,14 +464,13 @@ td {
 }
 @media (orientation: landscape) and (max-width: 768px) {
   .btn--soon {
-    width: 25%;
+    width: 35%;
     font-size: 3vw;
     padding: 0.8vw;
   }
 }
 @media (orientation: landscape) and (min-width: 992px) {
   .btn--soon {
-    width: 20%;
     font-size: 1.8vw;
     padding: 0.5vw;
   }
@@ -462,7 +481,7 @@ td {
   background-color: #fdcb46;
   border-radius: 50%;
   display: inline-block;
-  margin: 10px;
+  vertical-align: top;
 }
 @media (max-width: 768px) {
   .btn__dot {
