@@ -89,7 +89,7 @@
   background: linear-gradient(to top, #000 0%, #000 10%, transparent 10.01%) no-repeat left bottom/0 100%;
   transition: background-size 0.3s;
 }
-.anim-underline:hover {
+.anim-underline:hover, .anim-underline:active {
   background-size: 100% 100%;
 }
 
