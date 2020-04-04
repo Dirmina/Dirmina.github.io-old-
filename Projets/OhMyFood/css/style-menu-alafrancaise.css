@@ -264,19 +264,24 @@ tr {
 }
 
 .font__table--alafrancaise {
-  font-size: 1.5vw;
+  font-size: 3vw;
   font-family: Cambria;
   margin-bottom: 19.5vw;
 }
+@media (orientation: landscape) {
+  .font__table--alafrancaise {
+    font-size: 1.5vw;
+  }
+}
 @media (max-width: 501px) {
   .font__table--alafrancaise {
-    font-size: 2.35vw;
+    font-size: 5vw;
     margin-bottom: 4vw;
   }
 }
 @media (max-width: 768px) {
   .font__table--alafrancaise {
-    font-size: 2vw;
+    font-size: 2.7vw;
     margin-bottom: 13vw;
   }
 }
