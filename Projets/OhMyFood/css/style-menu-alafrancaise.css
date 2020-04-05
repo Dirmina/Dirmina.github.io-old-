@@ -53,7 +53,7 @@ th {
 }
 
 td {
-  padding-top: 1rem;
+  padding-top: 1.3vw;
 }
 
 .header {
@@ -72,14 +72,13 @@ td {
   position: fixed;
   width: 100%;
   bottom: 0;
-  padding: 0;
 }
 .footer__list {
-  padding-left: 20px;
-  padding-right: 20px;
-  margin: 0.5rem;
   display: flex;
   justify-content: space-between;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0.65vw;
   list-style: none;
   font-size: 4vw;
 }
@@ -153,6 +152,10 @@ td {
   animation-delay: 0s;
 }
 
+.zoom__menu--enchantee, .zoom__menu--alafrancaise, .zoom__menu--papilles, .zoom__menu--gout {
+  transition: all 1s;
+}
+
 .zoom__menu--enchantee:hover, .zoom__menu--enchantee:active {
   transform: scale(1.1);
   opacity: 0.5;
@@ -218,27 +221,19 @@ td {
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  height: 750px;
-}
-.alafrancaise > .menus__card {
-  width: 100%;
-  margin: 0;
 }
 
 .menus {
-  padding: 0 12vw;
-  /*vw for responsive padding*/
+  padding: 0 12vw 12vw 12vw;
   text-align: center;
 }
 .menus__card {
-  height: auto;
-  margin: 0;
-  padding: 3.9vw;
-  text-align: center;
-  box-shadow: 0 0 1.3vw #dad8d8;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding: 3.9vw;
+  text-align: center;
+  box-shadow: 0 0 1.3vw #dad8d8;
 }
 @media (orientation: landscape) and (min-width: 992px) {
   .menus__card {
@@ -251,43 +246,34 @@ td {
   font-weight: normal;
   font-family: "arial black";
 }
+@media (orientation: landscape) and (min-width: 992px) {
+  .font {
+    font-size: 2.3vw;
+  }
+}
 .font__title--alafrancaise {
   font-size: 3vw;
   font-family: "Croissant One";
-  background: -webkit-linear-gradient(-80deg, #e38a12 0%, #a56799 50%, #8f5aff 100%);
+  background: -webkit-linear-gradient(80deg, #e38a12 0%, #a56799 50%, #8f5aff 100%);
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: transparent;
 }
-
-tr {
-  height: 3.9vw;
-}
-
 .font__table--alafrancaise {
-  font-size: 3vw;
+  font-size: 1.8vw;
   font-family: Cambria;
-  margin-bottom: 19.5vw;
+  margin-bottom: 10vw;
 }
 @media (orientation: landscape) {
   .font__table--alafrancaise {
-    font-size: 1.5vw;
+    font-size: 2vw;
   }
 }
-@media (max-width: 501px) {
-  .font__table--alafrancaise {
-    font-size: 5vw;
-    margin-bottom: 4vw;
-  }
+.font__table--title {
+  font-size: 2.8vw;
 }
-@media (max-width: 768px) {
-  .font__table--alafrancaise {
-    font-size: 2.7vw;
-    margin-bottom: 13vw;
-  }
-}
-@media (min-width: 992px) and (max-width: 1200px) {
-  .font__table--alafrancaise {
-    margin-bottom: 13vw;
+@media (orientation: landscape) and (min-width: 992px) {
+  .font__table--title {
+    font-size: 2.5vw;
   }
 }
 .font__color--alafrancaise-first {
@@ -300,10 +286,10 @@ tr {
   color: #6e4ccc;
 }
 
-.table__part {
-  height: 13vw;
-  vertical-align: bottom;
+tr {
+  height: 3.9vw;
 }
+
 .table__cell--left {
   text-align: left;
   padding-left: 6.5vw;
@@ -326,19 +312,16 @@ tr {
 }
 
 .double-line--first {
-  height: 10%;
   background: linear-gradient(to right, #e38a12, #fff5fe, #fff5fe, #e38a12) no-repeat center;
   background-size: 90vw 5px;
 }
 
 .double-line--secund {
-  height: 10%;
   background: linear-gradient(to right, #a56799, #fff5fe, #fff5fe, #a56799) no-repeat center;
   background-size: 90vw 5px;
 }
 
 .double-line--third {
-  height: 10%;
   background: linear-gradient(to right, #6e4ccc, #fff5fe, #fff5fe, #6e4ccc) no-repeat center;
   background-size: 90vw 5px;
 }
@@ -346,11 +329,9 @@ tr {
 .anim-underline-first {
   background: linear-gradient(to top, #e38a12 0%, #e38a12 10%, transparent 10.01%) no-repeat left bottom/0 100%;
 }
-
 .anim-underline-secund {
   background: linear-gradient(to top, #a56799 0%, #a56799 10%, transparent 10.01%) no-repeat left bottom/0 100%;
 }
-
 .anim-underline-third {
   background: linear-gradient(to top, #6e4ccc 0%, #6e4ccc 10%, transparent 10.01%) no-repeat left bottom/0 100%;
 }

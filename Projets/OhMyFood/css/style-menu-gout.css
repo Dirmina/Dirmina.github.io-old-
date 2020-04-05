@@ -53,7 +53,7 @@ th {
 }
 
 td {
-  padding-top: 1rem;
+  padding-top: 1.3vw;
 }
 
 .header {
@@ -72,14 +72,13 @@ td {
   position: fixed;
   width: 100%;
   bottom: 0;
-  padding: 0;
 }
 .footer__list {
-  padding-left: 20px;
-  padding-right: 20px;
-  margin: 0.5rem;
   display: flex;
   justify-content: space-between;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0.65vw;
   list-style: none;
   font-size: 4vw;
 }
@@ -153,6 +152,10 @@ td {
   animation-delay: 0s;
 }
 
+.zoom__menu--enchantee, .zoom__menu--alafrancaise, .zoom__menu--papilles, .zoom__menu--gout {
+  transition: all 1s;
+}
+
 .zoom__menu--enchantee:hover, .zoom__menu--enchantee:active {
   transform: scale(1.1);
   opacity: 0.5;
@@ -218,28 +221,19 @@ td {
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  height: 750px;
-}
-.gout > .menus__card {
-  width: 100%;
-  margin: 0;
 }
 
 .menus {
-  padding: 0 12vw;
-  /*vw for responsive padding*/
+  padding: 0 12vw 12vw 12vw;
   text-align: center;
 }
 .menus__card {
-  height: auto;
-  margin: 0;
-  padding: 3.9vw;
-  padding-bottom: 6vw;
-  text-align: center;
-  box-shadow: 0 0 1.3vw #dad8d8;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding: 3.9vw;
+  text-align: center;
+  box-shadow: 0 0 1.3vw #dad8d8;
 }
 @media (orientation: landscape) and (min-width: 992px) {
   .menus__card {
@@ -259,29 +253,14 @@ td {
 }
 .font__title--gout {
   font-family: "kaushan script";
-  font-weight: normal;
   font-style: italic;
-  font-size: 8vw;
+  font-size: 5vw;
   background: -webkit-linear-gradient(-80deg, #41963c 0%, #80cb5e 50%, #beff7f 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-@media (orientation: landscape) and (min-width: 992px) {
-  .font__title--gout {
-    font-size: 5vw;
-  }
-}
-
-tr {
-  height: 3.9vw;
-}
-
-th {
-  font-size: 2vw;
-}
-
 .font__table--gout {
-  font-size: 1.6vw;
+  font-size: 2vw;
   font-family: "Segoe Print";
   margin-bottom: 14.3vw;
 }
@@ -310,15 +289,24 @@ th {
     font-size: 1.4vw;
   }
 }
-
-@media (min-width: 992px) {
-  .table__part {
-    font-size: 2.7vw;
+.font__table--title {
+  font-size: 2.4vw;
+  font-weight: bold;
+}
+@media (orientation: landscape) and (min-width: 992px) {
+  .font__table--title {
+    font-size: 2.1vw;
   }
 }
-.table__row--last {
-  padding-bottom: 6.5vw;
+
+tr {
+  height: 3.9vw;
 }
+
+th {
+  font-size: 2vw;
+}
+
 .table__cell--left {
   text-align: left;
   padding-left: 6.5vw;
@@ -335,7 +323,6 @@ th {
 }
 
 .double-line--gradient {
-  height: 10%;
   background: linear-gradient(to right, #41963c, #80cb5e, #beff7f, #fff, #fff, #fff, #fff, #beff7f, #80cb5e, #41963c) no-repeat center;
   background-size: 90vw 5px;
 }

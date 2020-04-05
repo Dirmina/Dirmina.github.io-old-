@@ -53,7 +53,7 @@ th {
 }
 
 td {
-  padding-top: 1rem;
+  padding-top: 1.3vw;
 }
 
 .header {
@@ -72,14 +72,13 @@ td {
   position: fixed;
   width: 100%;
   bottom: 0;
-  padding: 0;
 }
 .footer__list {
-  padding-left: 20px;
-  padding-right: 20px;
-  margin: 0.5rem;
   display: flex;
   justify-content: space-between;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0.65vw;
   list-style: none;
   font-size: 4vw;
 }
@@ -153,6 +152,10 @@ td {
   animation-delay: 0s;
 }
 
+.zoom__menu--enchantee, .zoom__menu--alafrancaise, .zoom__menu--papilles, .zoom__menu--gout {
+  transition: all 1s;
+}
+
 .zoom__menu--enchantee:hover, .zoom__menu--enchantee:active {
   transform: scale(1.1);
   opacity: 0.5;
@@ -213,7 +216,6 @@ td {
 
 /*font-family: devonshire (enchantee), menu segoe print*/
 img {
-  display: inline-block;
   max-width: 9%;
   vertical-align: middle;
 }
@@ -232,32 +234,19 @@ h2 > span {
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  height: 750px;
-}
-.enchantee > .menus__card {
-  width: 100%;
-  margin: 0;
-}
-
-section {
-  margin: 0;
 }
 
 .menus {
-  padding: 0 12vw;
-  /*vw for responsive padding*/
+  padding: 0 12vw 12vw 12vw;
   text-align: center;
 }
 .menus__card {
-  height: auto;
-  margin: 0;
-  padding: 3.9vw;
-  padding-bottom: 6vw;
-  text-align: center;
-  box-shadow: 0 0 1.3vw #dad8d8;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding: 3.9vw;
+  text-align: center;
+  box-shadow: 0 0 1.3vw #dad8d8;
 }
 @media (orientation: landscape) and (min-width: 992px) {
   .menus__card {
@@ -270,13 +259,17 @@ section {
   font-weight: normal;
   font-family: "arial black";
 }
+@media (orientation: landscape) and (min-width: 992px) {
+  .font {
+    font-size: 2.3vw;
+  }
+}
 .font__title--enchantee {
   font-family: "Devonshire";
   font-size: 4vw;
   margin: 0;
 }
 .font__title--enchantee-last {
-  display: block;
   padding: 6.5vw 1.3vw;
 }
 @media (orientation: landscape) and (min-width: 992px) {
@@ -284,35 +277,34 @@ section {
     padding: 2.6vw 1.3vw;
   }
 }
-
-tr {
-  height: 3.9vw;
-}
-
 .font__table--enchantee {
-  font-size: 1.7vw;
+  font-size: 2vw;
   font-family: "Segoe Print";
   margin: 1.3vw 3.9vw;
 }
-@media (max-width: 768px) {
-  .font__table--enchantee {
-    font-size: 2.2vw;
-  }
-}
-@media (max-width: 991px) {
+@media (max-width: 992px) {
   .font__table--enchantee {
     margin: 0;
+  }
+}
+@media (min-width: 992px) {
+  .font__table--enchantee {
     font-size: 2.4vw;
+  }
+}
+@media (orientation: landscape) {
+  .font__table--enchantee {
+    font-size: 1.7vw;
   }
 }
 @media (orientation: landscape) and (max-width: 768px) {
   .font__table--enchantee {
-    font-size: 2vw;
+    font-size: 1.8vw;
   }
 }
 @media (orientation: landscape) and (max-width: 992px) {
   .font__table--enchantee {
-    font-size: 1.7vw;
+    font-size: 1.6vw;
   }
 }
 @media (orientation: landscape) and (min-width: 992px) {
@@ -326,14 +318,14 @@ tr {
 }
 @media (orientation: landscape) and (min-width: 992px) {
   .font__table--title {
-    font-size: 2vw;
+    font-size: 2.5vw;
   }
 }
 
-.table__part {
-  height: 13vw;
-  vertical-align: bottom;
+tr {
+  height: 3.9vw;
 }
+
 .table__cell--left {
   text-align: left;
 }
@@ -348,7 +340,6 @@ tr {
 }
 
 .double-line {
-  height: 10%;
   background: linear-gradient(to right, #000, #000, #000, #fcdfdb, #fcdfdb, #fcdfdb, #fcdfdb, #000, #000, #000) no-repeat center;
   background-size: 90vw 5px;
 }

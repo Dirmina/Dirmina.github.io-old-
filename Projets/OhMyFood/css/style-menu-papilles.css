@@ -53,7 +53,7 @@ th {
 }
 
 td {
-  padding-top: 1rem;
+  padding-top: 1.3vw;
 }
 
 .header {
@@ -72,14 +72,13 @@ td {
   position: fixed;
   width: 100%;
   bottom: 0;
-  padding: 0;
 }
 .footer__list {
-  padding-left: 20px;
-  padding-right: 20px;
-  margin: 0.5rem;
   display: flex;
   justify-content: space-between;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0.65vw;
   list-style: none;
   font-size: 4vw;
 }
@@ -153,6 +152,10 @@ td {
   animation-delay: 0s;
 }
 
+.zoom__menu--enchantee, .zoom__menu--alafrancaise, .zoom__menu--papilles, .zoom__menu--gout {
+  transition: all 1s;
+}
+
 .zoom__menu--enchantee:hover, .zoom__menu--enchantee:active {
   transform: scale(1.1);
   opacity: 0.5;
@@ -218,28 +221,19 @@ td {
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  height: 750px;
-}
-.papilles > .menus__card {
-  width: 100%;
-  margin: 0;
 }
 
 .menus {
-  padding: 0 12vw;
-  /*vw for responsive padding*/
+  padding: 0 12vw 12vw 12vw;
   text-align: center;
 }
 .menus__card {
-  height: auto;
-  margin: 0;
-  padding: 3.9vw;
-  padding-bottom: 6vw;
-  text-align: center;
-  box-shadow: 0 0 1.3vw #dad8d8;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding: 3.9vw;
+  text-align: center;
+  box-shadow: 0 0 1.3vw #dad8d8;
 }
 @media (orientation: landscape) and (min-width: 992px) {
   .menus__card {
@@ -259,25 +253,14 @@ td {
 }
 .font__title--papilles {
   font-family: "cookie";
-  font-weight: normal;
   font-style: italic;
-  font-size: 10vw;
-  background: -webkit-linear-gradient(-80deg, #0228dd 0%, #0670f3 50%, #229df9 100%);
+  font-size: 6vw;
+  background: linear-gradient(80deg, #0228dd 0%, #0670f3 50%, #229df9 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-@media (orientation: landscape) and (min-width: 992px) {
-  .font__title--papilles {
-    font-size: 6vw;
-  }
-}
-
-tr {
-  height: 3.9vw;
-}
-
 .font__table--papilles {
-  font-size: 2.4vw;
+  font-size: 2vw;
   font-family: "Segoe Print";
   margin-bottom: 14.3vw;
 }
@@ -306,12 +289,20 @@ tr {
     font-size: 1.4vw;
   }
 }
-
-.table__part {
-  height: 13vw;
-  vertical-align: bottom;
-  font-size: 2vw;
+.font__table--title {
+  font-size: 2.4vw;
+  font-weight: bold;
 }
+@media (orientation: landscape) and (min-width: 992px) {
+  .font__table--title {
+    font-size: 2.1vw;
+  }
+}
+
+tr {
+  height: 3.9vw;
+}
+
 .table__cell--th {
   border: 1px black solid;
 }
@@ -319,7 +310,7 @@ tr {
   text-align: left;
   padding-left: 6.5vw;
 }
-@media (max-width: 1280px) {
+@media (max-width: 1200px) {
   .table__cell--left {
     padding-right: 10vw;
   }
@@ -331,19 +322,16 @@ tr {
 }
 
 .double-line--first {
-  height: 10%;
   background: linear-gradient(to right, #0228dd, #f9f9f9, #f9f9f9, #0228dd) no-repeat center;
   background-size: 90vw 5px;
 }
 
 .double-line--secund {
-  height: 10%;
   background: linear-gradient(to right, #0670f3, #f9f9f9, #f9f9f9, #0670f3) no-repeat center;
   background-size: 90vw 5px;
 }
 
 .double-line--third {
-  height: 10%;
   background: linear-gradient(to right, #229df9, #f9f9f9, #f9f9f9, #229df9) no-repeat center;
   background-size: 90vw 5px;
 }
@@ -351,11 +339,9 @@ tr {
 .anim-underline-first {
   background: linear-gradient(to top, #0228dd 0%, #0228dd 10%, transparent 10.01%) no-repeat left bottom/0 100%;
 }
-
 .anim-underline-secund {
   background: linear-gradient(to top, #0670f3 0%, #0670f3 10%, transparent 10.01%) no-repeat left bottom/0 100%;
 }
-
 .anim-underline-third {
   background: linear-gradient(to top, #229df9 0%, #229df9 10%, transparent 10.01%) no-repeat left bottom/0 100%;
 }
