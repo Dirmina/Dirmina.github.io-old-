@@ -281,6 +281,7 @@ h2 > span {
 .font__table--enchantee {
   font-size: 2vw;
   font-family: "Segoe Print";
+  margin: 0;
   margin-bottom: 10vw;
 }
 @media (min-width: 992px) {
