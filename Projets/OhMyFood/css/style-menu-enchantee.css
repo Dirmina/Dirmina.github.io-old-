@@ -247,18 +247,13 @@ h2 > span {
   padding: 3.9vw;
   text-align: center;
   box-shadow: 0 0 1.3vw #dad8d8;
+  margin: 0;
 }
 @media (orientation: landscape) and (min-width: 992px) {
   .menus__card {
     padding: 1.3vw;
     padding-bottom: 2.5vw;
   }
-}
-
-.center {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 .font {
@@ -274,14 +269,14 @@ h2 > span {
   font-family: "Devonshire";
   font-size: 4vw;
   margin: 0;
-  /*&-last {
-      padding: 6.5vw 1.3vw;
-      @media (orientation: landscape) {
-           @media (min-width: 992px) {
-              padding: 2.6vw 1.3vw;
-          }
-      }
-  }*/
+}
+.font__title--enchantee-last {
+  padding: 6.5vw 1.3vw;
+}
+@media (orientation: landscape) and (min-width: 992px) {
+  .font__title--enchantee-last {
+    padding: 2.6vw 1.3vw;
+  }
 }
 .font__table--enchantee {
   font-size: 2vw;
