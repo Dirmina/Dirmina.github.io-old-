@@ -267,7 +267,6 @@ h2 > span {
 .font__title--enchantee {
   font-family: "Devonshire";
   font-size: 4vw;
-  margin: 0;
 }
 .font__title--enchantee-last {
   padding: 6.5vw 1.3vw;
@@ -280,7 +279,7 @@ h2 > span {
 .font__table--enchantee {
   font-size: 2vw;
   font-family: "Segoe Print";
-  margin: 1.3vw 3.9vw;
+  margin-bottom: 10vw;
 }
 @media (max-width: 992px) {
   .font__table--enchantee {
