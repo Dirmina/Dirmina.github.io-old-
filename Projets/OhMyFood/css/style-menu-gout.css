@@ -245,6 +245,7 @@ td {
 .font {
   font-weight: normal;
   font-family: "arial black";
+  /*title on the white*/
 }
 @media (orientation: landscape) and (min-width: 992px) {
   .font {
@@ -255,9 +256,12 @@ td {
   font-family: "kaushan script";
   font-style: italic;
   font-size: 5vw;
-  background: -webkit-linear-gradient(-80deg, #41963c 0%, #80cb5e 50%, #beff7f 100%);
+  background: linear-gradient(80deg, #41963c 0%, #80cb5e 50%, #beff7f 100%);
+  /*gradient color (degree of skew, $color left-to-right percent)*/
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  /*background becomes the color of the text*/
+  color: transparent;
+  /*text being transparent allows you to see the background-clip work.*/
 }
 .font__table--gout {
   font-size: 2vw;
@@ -324,7 +328,9 @@ th {
 
 .double-line--gradient {
   background: linear-gradient(to right, #41963c, #80cb5e, #beff7f, #fff, #fff, #fff, #fff, #beff7f, #80cb5e, #41963c) no-repeat center;
+  /*no-repeat for 1 line*/
   background-size: 90vw 5px;
+  /*horizontal size of the background, so the size of the gradient. height of the line.*/
 }
 
 /*# sourceMappingURL=style-menu-gout.css.map */

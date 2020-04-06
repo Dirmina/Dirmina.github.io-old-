@@ -1,104 +1,119 @@
+/* IMPORTANT ! run sass with the command : npm run enchantee*/
+/* IMPORTANT ! run sass with the command : npm run enchantee*/
+/* IMPORTANT ! run sass with the command : npm run enchantee*/
+/* IMPORTANT ! run sass with the command : npm run enchantee*/
 @import "../Utils/variables";
 @import "../Utils/mixins";
 @import "../Base/base";
 @import "../Components/animations";
 @import url('https://fonts.googleapis.com/css?family=Devonshire&display=swap'); /*font-family: devonshire (enchantee), menu segoe print*/
 
-img {
-	display:inline-block;
+img { /*Specifity (0,0,1).*/
 	max-width: 9%;
-    max-height: auto;
-    vertical-align: middle;
+    vertical-align: middle; /*align the note with the last h2, is ok for the first too.*/
 }
 
-.img {
+.img { /*concern only the first title, specificity applies (0,1,0).*/
     max-width: 12%;
 }
-h2 > span { vertical-align: middle;}
 
-.enchantee{
+h2 > span { /* the text of the last title*/
+     vertical-align: middle;
+    }
+
+.enchantee {
     background: map-get($colour-card,enchantee);
     @include menu-details;
-    margin: 0; 
-    }
-    
-.menus {
-    padding: 6.5vw; /*vw for responsive padding*/
-    text-align: center;
-    &__card {
-        width:90%;
-        height: auto;
-        margin: 0;
-        padding: 3.9vw;
-        padding-bottom: 6vw;
-        text-align: center;
-        box-shadow: 0 0 1rem #dad8d8;
-        display:flex;
-        flex-direction: column;
-        justify-content: center;
-    }
 }
 
-    .font {
-        font-weight: normal;
-        font-family: "arial black";
-        &__title{
-            &--enchantee {
-            font-family: 'Devonshire';
-            font-size: 4vw;
-            margin: 0;
-                &-last {
-                    display: block;
-                    padding: 5rem 1rem;
-                }
-            }    
+.menus {
+    @include menu-details__menus;
+    &__card {
+        @include menu-details__card;
+        margin:0;
+    }
+}
+.font {
+    font-weight: normal;
+    font-family: "arial black"; /*title on the white*/
+    @media (orientation: landscape) {
+        @media (min-width: 992px) {
+            font-size: 2.3vw;
         }
     }
-
-tr {
-    height: 3rem;
-}
-
-.font {
+    &__title {
+        &--enchantee {
+        font-family: 'Devonshire';
+        font-size: 4vw;
+        margin: 0;
+            &-last {
+                padding: 6.5vw 1.3vw;
+                @media (orientation: landscape) {
+                     @media (min-width: 992px) {
+                        padding: 2.6vw 1.3vw;
+                    }
+                }
+            }
+        }    
+    }
     &__table {
 		&--enchantee {
-		font-size: 1.7vw;
-        font-family: "Segoe Print";
-        margin: 1rem 3rem;
-        @media (min-device-width:991px) and (max-device-width:1280px) and (max-width:991px), (max-device-width:991px) {
+            font-size: 2vw;
+            font-family: "Segoe Print";
             margin: 0;
-            font-size: 2.4vw;
+            margin-bottom: 10vw;
+            @media (min-width: 992px) {
+                font-size: 2.4vw;
+            }
+            @media (orientation: landscape) {
+                font-size: 1.7vw;
+                @media (max-width: 768px) {
+                    font-size: 1.8vw;
+                }
+                @media (max-width: 992px) {
+                    font-size: 1.6vw;
+                }
+                @media (min-width: 992px) {
+                    font-size: 1.4vw;     
+                }
+            }
         }
-		}
-		&--title {
-			font-size: 2.8vw;
-			font-weight:bold;
-		}
+        &--title {
+            font-size: 2.8vw;
+            font-weight:bold;
+            @media (orientation: landscape) {
+                @media (min-width: 992px) {
+                    font-size: 2.5vw;
+                }
+            }
+        }
     }
+}
+
+tr {
+    height: 3.9vw;
 }
 
 .table {
-    &__part {
-        height: 10rem;
-        vertical-align: bottom;
-    }  
     &__cell {
         &--left {
             text-align: left;
-            @media (min-device-width:991px) and (max-device-width:1280px) and (max-width:991px), (max-device-width:991px)  {
+            padding-left: 6.5vw;
+            @media (max-width:1200px) {
+                padding-left: 6.5vw;
 				padding-right: 10vw;
-            }
-            
+            }    
         }
-        &--right {
+        &--right { 
             text-align: right;
             font-weight: bold;
+            padding-right: 6.5vw;
         }
     }
 }
 
-.double-line {
-    height:10%;   
+.double-line {  
     background: linear-gradient(to right, #000,#000, #000,map-get($colour-card, enchantee),map-get($colour-card, enchantee), map-get($colour-card, enchantee), map-get($colour-card, enchantee), #000, #000, #000) no-repeat center;
-    background-size:90vw 5px;
+    /*no-repeat for 1 line*/
+    background-size:90vw 5px; /*horizontal size of the background, so the size of the gradient. height of the line.*/
 }

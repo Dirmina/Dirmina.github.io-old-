@@ -245,6 +245,7 @@ td {
 .font {
   font-weight: normal;
   font-family: "arial black";
+  /*title on the white*/
 }
 @media (orientation: landscape) and (min-width: 992px) {
   .font {
@@ -256,8 +257,11 @@ td {
   font-style: italic;
   font-size: 6vw;
   background: linear-gradient(80deg, #0228dd 0%, #0670f3 50%, #229df9 100%);
+  /*gradient color (degree of skew, $color left-to-right percent)*/
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  /*background becomes the color of the text*/
+  color: transparent;
+  /*text being transparent allows you to see the background-clip work.*/
 }
 .font__table--papilles {
   font-size: 2vw;
@@ -323,7 +327,9 @@ tr {
 
 .double-line--first {
   background: linear-gradient(to right, #0228dd, #f9f9f9, #f9f9f9, #0228dd) no-repeat center;
+  /*no-repeat for 1 line*/
   background-size: 90vw 5px;
+  /*horizontal size of the background, so the size of the gradient. height of the line.*/
 }
 
 .double-line--secund {
@@ -336,6 +342,9 @@ tr {
   background-size: 90vw 5px;
 }
 
+.anim-underline {
+  /* see __animations.scss for extension.*/
+}
 .anim-underline-first {
   background: linear-gradient(to top, #0228dd 0%, #0228dd 10%, transparent 10.01%) no-repeat left bottom/0 100%;
 }

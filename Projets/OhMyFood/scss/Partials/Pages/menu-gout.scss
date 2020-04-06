@@ -1,3 +1,8 @@
+/* IMPORTANT ! run sass with the command : npm run gout*/
+/* IMPORTANT ! run sass with the command : npm run gout*/
+/* IMPORTANT ! run sass with the command : npm run gout*/
+/* IMPORTANT ! run sass with the command : npm run gout*/
+
 @import "../Utils/variables";
 @import "../Utils/mixins";
 @import "../Base/base";
@@ -9,85 +14,89 @@
     @include menu-details;
 }
 .menus {
-    padding: 6.5vw; /*vw for responsive padding*/
-    text-align: center;
+  @include menu-details__menus;
     &__card {
-        width:90%;
-        height: auto;
-        margin: 0;
-        padding: 3.9vw;
-        padding-bottom: 6vw;
-        text-align: center;
-        box-shadow: 0 0 1rem #dad8d8;
-        display:flex;
-        flex-direction: column;
-        justify-content: center;
+    @include menu-details__card;
     }
 }
 .font {
     font-weight: normal;
-    font-family: "arial black";
+    font-family: "arial black"; /*title on the white*/
+    @media (orientation: landscape) {
+        @media (min-width: 992px) {
+            font-size: 2.3vw;
+        }
+    }
     &__title {   
         &--gout {
             font-family: 'kaushan script';
-            font-weight: normal;
             font-style: italic;
-            font-size: 8vw;
-            background: -webkit-linear-gradient(-80deg, map-get($colour-text-gout, first) 0%,map-get($colour-text-gout, secund) 50%, map-get($colour-text-gout, third) 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
+            font-size: 5vw;
+            background:linear-gradient(80deg, map-get($colour-text-gout, first) 0%,map-get($colour-text-gout, secund) 50%, map-get($colour-text-gout, third) 100%);
+            /*gradient color (degree of skew, $color left-to-right percent)*/
+            -webkit-background-clip: text; /*background becomes the color of the text*/
+            color: transparent; /*text being transparent allows you to see the background-clip work.*/
         }
     }
-}
-tr {
-    height: 3rem;
-}
-th {font-size: 2vw;}
-
-.font {
     &__table {
 		&--gout {
-		font-size: 1.6vw;
-        font-family: "Segoe Print";
-        margin-bottom: 11rem;
-        @media (min-device-width:991px) and (max-device-width:1280px) and (max-width:991px), (max-device-width:991px) {
-            margin: 0;
-            font-size: 2.4vw;
+            font-size: 2vw;
+            font-family: "Segoe Print";
+            margin-bottom: 14.3vw;
+            @media (min-width: 768px) {
+                font-size: 2.2vw
+            }
+            @media (min-width: 992px) {
+                font-size: 2.4vw;
+            }
+            @media (orientation: landscape) {
+                @media (max-width: 768px) {
+                    font-size: 1.8vw;
+                }
+                @media (max-width: 992px) {
+                    font-size: 1.6vw;
+                }
+                @media (min-width: 992px) {
+                    font-size: 1.4vw;
+                }
+            }
         }
-		}
-	}
-}
-.table {
-    &__row {
-        &--last {
-            padding-bottom: 5rem;
+        &--title {
+            font-size: 2.4vw;
+            font-weight:bold;
+            @media (orientation: landscape) {
+                @media (min-width: 992px) {
+                    font-size: 2.1vw;
+                }
+            }
         }
     }
+}
+
+tr {height: 3.9vw;}
+
+th {font-size: 2vw;}
+
+.table {
     &__cell {
         &--left {
             text-align: left;
-            padding-left: 5rem;
-            @media (min-device-width:991px) and (max-device-width:1280px) and (max-width:991px), (max-device-width:991px) {
-                padding-left: 1rem;
+            padding-left: 6.5vw;
+            @media (max-width:1280px) {
                 padding-right: 10vw;
 			}
         }
         &--right {
             text-align: right;
             font-weight: bold;
-            padding-right: 5rem;
-            @media (min-device-width:991px) and (max-device-width:1280px) and (max-width:991px), (max-device-width:991px) {
-				padding-right: 1rem;
-			}
+            padding-right: 6.5vw;
         }
     }
 }
 
 
-.double-line--gradient {
-    height:10%;   
+.double-line--gradient {  
     background: linear-gradient(to right, map-get($colour-text-gout, first),map-get($colour-text-gout, secund), map-get($colour-text-gout, third),#fff,#fff, #fff, #fff, map-get($colour-text-gout, third), map-get($colour-text-gout, secund), map-get($colour-text-gout, first)) no-repeat center;
-    background-size:90vw 5px;
+    /*no-repeat for 1 line*/
+    background-size:90vw 5px; /*horizontal size of the background, so the size of the gradient. height of the line.*/
 }
-          
-

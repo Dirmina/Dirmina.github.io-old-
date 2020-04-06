@@ -245,6 +245,7 @@ td {
 .font {
   font-weight: normal;
   font-family: "arial black";
+  /*title on the white*/
 }
 @media (orientation: landscape) and (min-width: 992px) {
   .font {
@@ -255,8 +256,11 @@ td {
   font-size: 3vw;
   font-family: "Croissant One";
   background: -webkit-linear-gradient(80deg, #e38a12 0%, #a56799 50%, #8f5aff 100%);
+  /*gradient color (degree of skew, $color left-to-right percent)*/
   -webkit-background-clip: text;
+  /*background becomes the color of the text*/
   color: transparent;
+  /*text being transparent allows you to see the background-clip work.*/
 }
 .font__table--alafrancaise {
   font-size: 1.8vw;
@@ -313,7 +317,9 @@ tr {
 
 .double-line--first {
   background: linear-gradient(to right, #e38a12, #fff5fe, #fff5fe, #e38a12) no-repeat center;
+  /*no-repeat for 1 line*/
   background-size: 90vw 5px;
+  /*horizontal size of the background, so the size of the gradient. height of the line.*/
 }
 
 .double-line--secund {
@@ -326,6 +332,9 @@ tr {
   background-size: 90vw 5px;
 }
 
+.anim-underline {
+  /* see __animations.scss for extension.*/
+}
 .anim-underline-first {
   background: linear-gradient(to top, #e38a12 0%, #e38a12 10%, transparent 10.01%) no-repeat left bottom/0 100%;
 }

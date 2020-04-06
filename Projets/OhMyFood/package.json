@@ -5,13 +5,17 @@
   "main": "index.js",
   "scripts": {
     "sass": "sass --watch ./scss/main.scss:./css/style.css",
-    "enchantee": "sass --watch ./scss/Partials/Pages/menu-enchantee.scss:./css/style-menu-enchantee.css",
+    "enchantee": "sass --watch ./scss/Partials/Pages/menu-enchantee.scss:./css/style-menu-enchantee.css ",
     "alafrancaise": "sass --watch ./scss/Partials/Pages/menu-alafrancaise.scss:./css/style-menu-alafrancaise.css",
     "papilles": "sass --watch ./scss/Partials/Pages/menu-papilles.scss:./css/style-menu-papilles.css",
     "gout": "sass --watch ./scss/Partials/Pages/menu-gout.scss:./css/style-menu-gout.css",
-    "prefix": "postcss ./style.css use --autoprefixer -d ./css/prefixed/"
+    "prefix": "npx postcss ./css/style-menu-gout.css --use autoprefixer -d ./css/prefixed/"
   },
   "author": "",
   "license": "ISC",
-  "browserslist": "Last 4 versions"
+  "browserslist": "last 4 versions",
+  "dependencies": {
+    "autoprefixer": "^9.7.5",
+    "postcss": "^7.0.27"
+  }
 }

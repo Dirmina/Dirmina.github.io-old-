@@ -34,19 +34,29 @@
       }
     }
 }
-.zoom__menu--enchantee:hover {
+
+.zoom__menu {
+	&--enchantee,
+	&--alafrancaise,
+	&--papilles,
+	&--gout {
+		@include zoom-menu;
+	}
+}
+
+.zoom__menu--enchantee:hover, .zoom__menu--enchantee:active{
     transform: scale(1.1);
     opacity:0.5;
 }
-.zoom__menu--alafrancaise:hover {
+.zoom__menu--alafrancaise:hover, .zoom__menu--alafrancaise:active {
     transform: scale(1.2);
     opacity:0.5;
 }
-.zoom__menu--papilles:hover {
+.zoom__menu--papilles:hover, .zoom__menu--papilles:active {
     transform: scale(1.10);
     opacity:0.5; 
 }
-.zoom__menu--gout:hover {
+.zoom__menu--gout:hover, .zoom__menu--gout:active {
     transform: scale(1.10);
     opacity:0.5; 
 }
@@ -62,27 +72,21 @@
         transform: translateX($shake-intensity * -1);
     }
     2% {
-        // entièrement à droite
         transform: translateX($shake-intensity);
     }
     3% {
-        // entièrement à gauche
         transform: translateX($shake-intensity * -1);
     }
     4% {
-        // entièrement à droite
         transform: translateX($shake-intensity);
     }
     5% {
-        // entièrement à gauche
         transform: translateX($shake-intensity * -1);
     }
     6% {
-        // entièrement à droite
         transform: translateX($shake-intensity);
     }
     7% {
-        // entièrement à gauche
         transform: translateX($shake-intensity * -1);
     }
     7%, 100% {
@@ -94,7 +98,7 @@
     text-decoration: none;
     background: linear-gradient(to top, #000 0%, #000 10%, transparent 10.01%) no-repeat left bottom / 0 100%;
     transition: background-size 0.3s;
-    &:hover {
+    &:hover, &:active {
         background-size: 100% 100%;
     }
 }
