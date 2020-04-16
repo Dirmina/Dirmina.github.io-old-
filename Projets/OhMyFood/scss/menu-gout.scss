@@ -3,10 +3,10 @@
 /* IMPORTANT ! run sass with the command : npm run gout*/
 /* IMPORTANT ! run sass with the command : npm run gout*/
 
-@import "../Utils/variables";
-@import "../Utils/mixins";
-@import "../Base/base";
-@import "../Components/animations";
+@import "./partials/Utils/variables";
+@import "./partials/Utils/mixins";
+@import "./partials/Base/base"; 
+@import "./partials/Components/animations";
 @import url('https://fonts.googleapis.com/css?family=Kaushan+Script&display=swap'); /* font-family: kaushan script (gout)*/
 
 .gout {

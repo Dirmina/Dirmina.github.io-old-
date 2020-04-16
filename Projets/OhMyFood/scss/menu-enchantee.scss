@@ -2,10 +2,10 @@
 /* IMPORTANT ! run sass with the command : npm run enchantee*/
 /* IMPORTANT ! run sass with the command : npm run enchantee*/
 /* IMPORTANT ! run sass with the command : npm run enchantee*/
-@import "../Utils/variables";
-@import "../Utils/mixins";
-@import "../Base/base";
-@import "../Components/animations";
+@import "./partials/Utils/variables";
+@import "./partials/Utils/mixins";
+@import "./partials/Base/base";
+@import "./partials/Components/animations";
 @import url('https://fonts.googleapis.com/css?family=Devonshire&display=swap'); /*font-family: devonshire (enchantee), menu segoe print*/
 
 img { /*Specifity (0,0,1).*/

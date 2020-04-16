@@ -2,10 +2,11 @@
 /* IMPORTANT ! run sass with the command : npm run alafrancaise*/
 /* IMPORTANT ! run sass with the command : npm run alafrancaise*/
 /* IMPORTANT ! run sass with the command : npm run alafrancaise*/
-@import "../Utils/variables";
-@import "../Utils/mixins";
-@import "../Base/base";
-@import "../Components/animations";
+@import "./partials/Utils/variables";
+@import "./partials/Utils/mixins";
+@import "./partials/Base/base";
+@import "./partials/Components/animations";
+
 @import url('https://fonts.googleapis.com/css?family=Croissant+One&display=swap'); /*font-family: 'Croissant One' (alafrancaise), Menu Cambria*/
 
 .alafrancaise {

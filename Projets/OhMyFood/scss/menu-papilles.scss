@@ -3,10 +3,10 @@
 /* IMPORTANT ! run sass with the command : npm run papilles*/
 /* IMPORTANT ! run sass with the command : npm run papilles*/
 
-@import "../Utils/variables";
-@import "../Utils/mixins";
-@import "../Base/base";
-@import "../Components/animations";
+@import "./partials/Utils/variables";
+@import "./partials/Utils/mixins";
+@import "./partials/Base/base";
+@import "./partials/Components/animations";
 @import url('https://fonts.googleapis.com/css?family=Cookie&display=swap'); /*font-family: cookie (papilles/gout)*/
 
 .papilles {
