@@ -40,7 +40,7 @@
 	&--alafrancaise,
 	&--papilles,
 	&--gout {
-		@include zoom-menu;
+		transition: all 1s;
 	}
 }
 
@@ -54,7 +54,7 @@
 }
 .zoom__menu--papilles:hover, .zoom__menu--papilles:active {
     transform: scale(1.10);
-    opacity:0.5; 
+    opacity:0.5;
 }
 .zoom__menu--gout:hover, .zoom__menu--gout:active {
     transform: scale(1.10);
