@@ -1,0 +1,13 @@
+.nav__button {
+    background-color: inherit;
+    transition-property: background-color;
+    transition-duration: 0.2s;
+}
+
+.nav__button:hover {
+    background-color: darken($colour__primary, 7);
+}
+
+.nav__button:active {
+    background-color: darken($colour__primary, 17)
+}
